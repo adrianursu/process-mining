@@ -1,3 +1,5 @@
 .dem
 .DS_Store
-.demos/
+demos/** 
+test_main.txt
+go.sum
