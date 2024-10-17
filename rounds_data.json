@@ -6,152 +6,80 @@
     "kill_events": [
       {
         "time": "0:47",
+        "timestamp": "1m8.046876672s",
         "killer": "xertioN [T]",
-        "killer_position": [
-          913.7144,
-          2677.0637,
-          140.0843
-        ],
         "killer_place": "BombsiteB",
         "victim": "jL [CT]",
-        "victim_position": [
-          1295.9851,
-          2850.3071,
-          128.69547
-        ],
         "victim_place": "Ruins",
         "weapon": "Glock-18",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:37",
+        "timestamp": "1m25.546876928s",
         "killer": "b1t [CT]",
-        "killer_position": [
-          1172.2151,
-          2989.8477,
-          128.03157
-        ],
         "killer_place": "Ruins",
         "victim": "torzsi [T]",
-        "victim_position": [
-          1318.4688,
-          3077.596,
-          164.73955
-        ],
         "victim_place": "Ruins",
         "weapon": "USP-S",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:35",
+        "timestamp": "1m27.265624064s",
         "killer": "xertioN [T]",
-        "killer_position": [
-          964.4071,
-          3088.2354,
-          128.03125
-        ],
         "killer_place": "Ruins",
         "victim": "b1t [CT]",
-        "victim_position": [
-          1248.5226,
-          3104.6667,
-          128.03125
-        ],
         "victim_place": "Ruins",
         "weapon": "Glock-18",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:35",
+        "timestamp": "1m27.421878272s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          1235.6476,
-          3072.3738,
-          128.03125
-        ],
         "killer_place": "Ruins",
         "victim": "xertioN [T]",
-        "victim_position": [
-          964.46014,
-          3087.1804,
-          128.03125
-        ],
         "victim_place": "Ruins",
         "weapon": "USP-S",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:33",
+        "timestamp": "1m29.984376832s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          1054.8544,
-          3197.5127,
-          128.03125
-        ],
         "killer_place": "Ruins",
         "victim": "Jimpphat [T]",
-        "victim_position": [
-          1005.7682,
-          3487.3284,
-          128.03125
-        ],
         "victim_place": "Ruins",
         "weapon": "USP-S",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:24",
+        "timestamp": "1m38.984378368s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          8.948533,
-          3149.4233,
-          161.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "w0nderful [CT]",
-        "victim_position": [
-          190.91248,
-          2989.6213,
-          161.53127
-        ],
         "victim_place": "BombsiteB",
         "weapon": "Glock-18",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:21",
+        "timestamp": "1m41.828124672s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          669.97394,
-          2117.3992,
-          138.82689
-        ],
         "killer_place": "Banana",
         "victim": "Aleksib [CT]",
-        "victim_position": [
-          874.9227,
-          2682.7383,
-          140.0843
-        ],
         "victim_place": "BombsiteB",
         "weapon": "Glock-18",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:18",
+        "timestamp": "1m44.04687872s",
         "killer": "iM [CT]",
-        "killer_position": [
-          248.95216,
-          2922.803,
-          161.53127
-        ],
         "killer_place": "BombsiteB",
         "victim": "siuhy [T]",
-        "victim_position": [
-          46.77191,
-          3217.8186,
-          160.95006
-        ],
         "victim_place": "BombsiteB",
         "weapon": "Dual Berettas",
         "headshot": false
@@ -159,7 +87,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "1m17.421871104s",
         "player": "Jimpphat [T]",
         "player_position": [
           547.37506,
@@ -179,57 +108,30 @@
     "kill_events": [
       {
         "time": "0:28",
+        "timestamp": "3m30.906251264s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          1378.0546,
-          990.3064,
-          160.77191
-        ],
         "killer_place": "TopofMid",
         "victim": "w0nderful [CT]",
-        "victim_position": [
-          1827.3544,
-          1073.3312,
-          157.02582
-        ],
         "victim_place": "Arch",
         "weapon": "MAC-10",
         "headshot": true
       },
       {
         "time": "0:25",
+        "timestamp": "3m33.562507264s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          1467.2345,
-          1067.159,
-          159.59773
-        ],
         "killer_place": "TopofMid",
         "victim": "b1t [CT]",
-        "victim_position": [
-          1964.0624,
-          1010.1947,
-          232.09843
-        ],
         "victim_place": "Arch",
         "weapon": "MAC-10",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:23",
+        "timestamp": "4m13.812506624s",
         "killer": "xertioN [T]",
-        "killer_position": [
-          801.11536,
-          1959.7754,
-          136.03127
-        ],
         "killer_place": "Banana",
         "victim": "jL [CT]",
-        "victim_position": [
-          514.9304,
-          3169.309,
-          209.45253
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": true
@@ -237,7 +139,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "3m52.265629696s",
         "player": "torzsi [T]",
         "player_position": [
           1949.0312,
@@ -257,171 +160,90 @@
     "kill_events": [
       {
         "time": "0:45",
+        "timestamp": "5m49.21873408s",
         "killer": "b1t [CT]",
-        "killer_position": [
-          945.9446,
-          -125.02161,
-          256.5318
-        ],
         "killer_place": "Balcony",
         "victim": "Brollan [T]",
-        "victim_position": [
-          923.0592,
-          405.23846,
-          95.97429
-        ],
         "victim_place": "SecondMid",
         "weapon": "Five-SeveN",
         "headshot": false
       },
       {
         "time": "0:34",
+        "timestamp": "5m59.531249664s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          863.96643,
-          2548.8123,
-          140.0843
-        ],
         "killer_place": "BombsiteB",
         "victim": "Aleksib [CT]",
-        "victim_position": [
-          640.0883,
-          2439.3975,
-          189.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "MAC-10",
         "headshot": false
       },
       {
         "time": "0:24",
+        "timestamp": "6m9.265639424s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          403.98618,
-          2908.5269,
-          193.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "jL [CT]",
-        "victim_position": [
-          330.06808,
-          3154.9688,
-          170.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "MAC-10",
         "headshot": true
       },
       {
         "time": "0:21",
+        "timestamp": "6m12.328136704s",
         "killer": "xertioN [T]",
-        "killer_position": [
-          489.74088,
-          2576.2927,
-          161.53125
-        ],
         "killer_place": "BombsiteB",
         "victim": "w0nderful [CT]",
-        "victim_position": [
-          1156.4965,
-          2808.9722,
-          128.69547
-        ],
         "victim_place": "Ruins",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:21",
+        "timestamp": "6m12.968751104s",
         "killer": "iM [CT]",
-        "killer_position": [
-          1306.5629,
-          2710.8755,
-          131.88506
-        ],
         "killer_place": "Ruins",
         "victim": "xertioN [T]",
-        "victim_position": [
-          493.43893,
-          2559.682,
-          166.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "FAMAS",
         "headshot": false
       },
       {
         "time": "0:12",
+        "timestamp": "6m21.593747456s",
         "killer": "iM [CT]",
-        "killer_position": [
-          637.71716,
-          3468.6685,
-          162.4271
-        ],
         "killer_place": "BombsiteB",
         "victim": "torzsi [T]",
-        "victim_position": [
-          169.20033,
-          2787.5752,
-          161.53127
-        ],
         "victim_place": "BombsiteB",
         "weapon": "FAMAS",
         "headshot": true
       },
       {
         "time": "0:07",
+        "timestamp": "6m26.874998784s",
         "killer": "iM [CT]",
-        "killer_position": [
-          536.05475,
-          3195.7466,
-          180.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "siuhy [T]",
-        "victim_position": [
-          233.03001,
-          2974.915,
-          161.53127
-        ],
         "victim_place": "BombsiteB",
         "weapon": "FAMAS",
         "headshot": false
       },
       {
         "time": "0:05",
+        "timestamp": "6m28.328128512s",
         "killer": "Jimpphat [T]",
-        "killer_position": [
-          466.89838,
-          2805.4255,
-          193.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "iM [CT]",
-        "victim_position": [
-          446.70673,
-          3195.3958,
-          161.11057
-        ],
         "victim_place": "BombsiteB",
         "weapon": "MAC-10",
         "headshot": true
       },
       {
         "time": "0:05",
+        "timestamp": "6m28.640636928s",
         "killer": "b1t [CT]",
-        "killer_position": [
-          722.862,
-          2861.6345,
-          139.72467
-        ],
         "killer_place": "BombsiteB",
         "victim": "Jimpphat [T]",
-        "victim_position": [
-          467.77158,
-          2805.8406,
-          193.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "Five-SeveN",
         "headshot": false
@@ -436,133 +258,70 @@
     "kill_events": [
       {
         "time": "0:00",
+        "timestamp": "8m37.203132416s",
         "killer": "Aleksib [CT]",
-        "killer_position": [
-          488.0641,
-          2440.2268,
-          167.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "siuhy [T]",
-        "victim_position": [
-          462.33646,
-          2942.6187,
-          161.53125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "8m37.906235392s",
         "killer": "Aleksib [CT]",
-        "killer_position": [
-          486.1242,
-          2440.8652,
-          167.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "Brollan [T]",
-        "victim_position": [
-          498.12088,
-          2579.0522,
-          166.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "8m40.54687744s",
         "killer": "xertioN [T]",
-        "killer_position": [
-          573.14526,
-          2528.8745,
-          279.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "Aleksib [CT]",
-        "victim_position": [
-          440.41205,
-          2476.4788,
-          167.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "8m41.65623808s",
         "killer": "jL [CT]",
-        "killer_position": [
-          12.812116,
-          3167.52,
-          161.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "xertioN [T]",
-        "victim_position": [
-          474.8816,
-          2448.4626,
-          271.5056
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "8m42.921869312s",
         "killer": "Jimpphat [T]",
-        "killer_position": [
-          521.5187,
-          2708.4482,
-          164.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "jL [CT]",
-        "victim_position": [
-          6.0162034,
-          3145.9285,
-          161.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "8m47.890612224s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          413.9691,
-          3524.0168,
-          165.24622
-        ],
         "killer_place": "BombsiteB",
         "victim": "Jimpphat [T]",
-        "victim_position": [
-          462.7389,
-          2486.13,
-          167.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A4",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:33",
+        "timestamp": "8m59.781234688s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          541.02185,
-          3272.7278,
-          167.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "torzsi [T]",
-        "victim_position": [
-          4.3670564,
-          2677.8633,
-          161.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A4",
         "headshot": false
@@ -570,7 +329,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "8m48.015622144s",
         "player": "torzsi [T]",
         "player_position": [
           546.6486,
@@ -582,7 +342,8 @@
         "success": true
       },
       {
-        "time": "0:00",
+        "time": "0:26",
+        "timestamp": "",
         "player": "iM [CT]",
         "player_position": [
           489.6295,
@@ -602,114 +363,60 @@
     "kill_events": [
       {
         "time": "0:57",
+        "timestamp": "10m10.734374912s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          1747.292,
-          -45.979797,
-          132.3323
-        ],
         "killer_place": "BombsiteA",
         "victim": "Brollan [T]",
-        "victim_position": [
-          1245.1847,
-          354.67288,
-          128.03125
-        ],
         "victim_place": "Apartments",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:55",
+        "timestamp": "10m13.17185536s",
         "killer": "iM [CT]",
-        "killer_position": [
-          1361.6212,
-          1220.2885,
-          181.03125
-        ],
         "killer_place": "TopofMid",
         "victim": "xertioN [T]",
-        "victim_position": [
-          1417.6307,
-          446.286,
-          124.49246
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:53",
+        "timestamp": "10m14.796886016s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          1636.781,
-          -68.56311,
-          142.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "siuhy [T]",
-        "victim_position": [
-          1232.6729,
-          587.5955,
-          124.92925
-        ],
         "victim_place": "Middle",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:50",
+        "timestamp": "10m17.234366464s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          1575.5698,
-          -43.688538,
-          132.03125
-        ],
         "killer_place": "Quad",
         "victim": "torzsi [T]",
-        "victim_position": [
-          1208.6327,
-          585.36346,
-          123.08
-        ],
         "victim_place": "Middle",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:47",
+        "timestamp": "10m20.796903424s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          1624.6375,
-          -48.72809,
-          133.81215
-        ],
         "killer_place": "BombsiteA",
         "victim": "b1t [CT]",
-        "victim_position": [
-          1734.7356,
-          -74.036804,
-          186.19928
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:47",
+        "timestamp": "10m20.999999488s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          1624.6466,
-          -48.691223,
-          133.79231
-        ],
         "killer_place": "BombsiteA",
         "victim": "Jimpphat [T]",
-        "victim_position": [
-          2073.445,
-          -109.289795,
-          262.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
@@ -724,95 +431,50 @@
     "kill_events": [
       {
         "time": "1:25",
+        "timestamp": "10m56.765616128s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          292.1159,
-          652.9673,
-          18.013
-        ],
         "killer_place": "Underpass",
         "victim": "iM [CT]",
-        "victim_position": [
-          1243.5416,
-          568.6816,
-          125.03125
-        ],
         "victim_place": "Middle",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "1:22",
+        "timestamp": "10m59.21875968s",
         "killer": "b1t [CT]",
-        "killer_position": [
-          1459.1434,
-          551.1803,
-          118.577385
-        ],
         "killer_place": "TopofMid",
         "victim": "siuhy [T]",
-        "victim_position": [
-          291.8641,
-          658.6686,
-          19.818766
-        ],
         "victim_place": "Underpass",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "1:16",
+        "timestamp": "11m5.765609472s",
         "killer": "Jimpphat [T]",
-        "killer_position": [
-          1199.829,
-          -342.1941,
-          260.03125
-        ],
         "killer_place": "Apartments",
         "victim": "w0nderful [CT]",
-        "victim_position": [
-          1899.4539,
-          -260.51514,
-          279.5883
-        ],
         "victim_place": "Apartments",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "1:07",
+        "timestamp": "11m14.171846656s",
         "killer": "torzsi [T]",
-        "killer_position": [
-          1334.5079,
-          175.39175,
-          138.03125
-        ],
         "killer_place": "TopofMid",
         "victim": "b1t [CT]",
-        "victim_position": [
-          1864.0929,
-          17.584076,
-          125.52522
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:43",
+        "timestamp": "11m28.031268864s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          915.2877,
-          -663.61743,
-          89.03125
-        ],
         "killer_place": "BackAlley",
         "victim": "jL [CT]",
-        "victim_position": [
-          909.5227,
-          -49.117188,
-          110.71109
-        ],
         "victim_place": "SecondMid",
         "weapon": "AK-47",
         "headshot": false
@@ -820,7 +482,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "11m26.906277888s",
         "player": "torzsi [T]",
         "player_position": [
           1958.947,
@@ -840,57 +503,30 @@
     "kill_events": [
       {
         "time": "0:26",
+        "timestamp": "13m42.359359488s",
         "killer": "xertioN [T]",
-        "killer_position": [
-          534.48413,
-          2061.143,
-          138.46066
-        ],
         "killer_place": "Banana",
         "victim": "jL [CT]",
-        "victim_position": [
-          757.17316,
-          1891.4763,
-          139.83707
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "14m32.749989888s",
         "killer": "Aleksib [CT]",
-        "killer_position": [
-          34.634544,
-          2885.547,
-          161.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "xertioN [T]",
-        "victim_position": [
-          627.1373,
-          2546.9438,
-          236.95612
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "14m34.234380288s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          857.7384,
-          2602.5266,
-          140.0843
-        ],
         "killer_place": "BombsiteB",
         "victim": "Aleksib [CT]",
-        "victim_position": [
-          59.468685,
-          2931.0183,
-          161.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": true
@@ -898,7 +534,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "14m46.56248832s",
         "player": "Brollan [T]",
         "player_position": [
           548.2034,
@@ -918,95 +555,50 @@
     "kill_events": [
       {
         "time": "0:31",
+        "timestamp": "16m56.859394048s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          2518.697,
-          1153.3872,
-          159.17154
-        ],
         "killer_place": "Library",
         "victim": "siuhy [T]",
-        "victim_position": [
-          1377.0314,
-          990.81024,
-          160.8151
-        ],
         "victim_place": "TopofMid",
         "weapon": "AWP",
         "headshot": false
       },
       {
         "time": "0:28",
+        "timestamp": "17m0.140650496s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          2427.409,
-          1119.4073,
-          169.03125
-        ],
         "killer_place": "Library",
         "victim": "Brollan [T]",
-        "victim_position": [
-          1995.0382,
-          -177.04944,
-          256.03125
-        ],
         "victim_place": "Balcony",
         "weapon": "AWP",
         "headshot": false
       },
       {
         "time": "0:27",
+        "timestamp": "17m1.156261888s",
         "killer": "iM [CT]",
-        "killer_position": [
-          1754.356,
-          1200.6552,
-          176.18787
-        ],
         "killer_place": "Arch",
         "victim": "xertioN [T]",
-        "victim_position": [
-          1384.9562,
-          986.54767,
-          160.44974
-        ],
         "victim_place": "TopofMid",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:24",
+        "timestamp": "17m4.39059456s",
         "killer": "Jimpphat [T]",
-        "killer_position": [
-          2071.8787,
-          -141.23267,
-          262.03125
-        ],
         "killer_place": "Balcony",
         "victim": "b1t [CT]",
-        "victim_position": [
-          1748.6562,
-          80.431,
-          130.0795
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:23",
+        "timestamp": "17m4.93749248s",
         "killer": "iM [CT]",
-        "killer_position": [
-          2220.1284,
-          952.3455,
-          162.59044
-        ],
         "killer_place": "BombsiteA",
         "victim": "Jimpphat [T]",
-        "victim_position": [
-          2068.812,
-          -140.72339,
-          262.03125
-        ],
         "victim_place": "Balcony",
         "weapon": "M4A1",
         "headshot": false
@@ -1021,152 +613,80 @@
     "kill_events": [
       {
         "time": "1:17",
+        "timestamp": "19m6.640662528s",
         "killer": "Jimpphat [T]",
-        "killer_position": [
-          1182.0297,
-          -484.26392,
-          209.67773
-        ],
         "killer_place": "Apartments",
         "victim": "b1t [CT]",
-        "victim_position": [
-          1227.2313,
-          178.65321,
-          199.81374
-        ],
         "victim_place": "Apartments",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:50",
+        "timestamp": "19m33.640577024s",
         "killer": "w0nderful [CT]",
-        "killer_position": [
-          2459.1667,
-          964.4241,
-          171.12366
-        ],
         "killer_place": "BombsiteA",
         "victim": "xertioN [T]",
-        "victim_position": [
-          1481.8304,
-          1060.5356,
-          158.79741
-        ],
         "victim_place": "TopofMid",
         "weapon": "AWP",
         "headshot": false
       },
       {
         "time": "0:45",
+        "timestamp": "19m39.062501376s",
         "killer": "Jimpphat [T]",
-        "killer_position": [
-          2093.422,
-          -254.94104,
-          255.51544
-        ],
         "killer_place": "Balcony",
         "victim": "w0nderful [CT]",
-        "victim_position": [
-          2230.4148,
-          835.73804,
-          156.9148
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:38",
+        "timestamp": "19m45.515569152s",
         "killer": "Aleksib [CT]",
-        "killer_position": [
-          1820.601,
-          259.1056,
-          220.03128
-        ],
         "killer_place": "BombsiteA",
         "victim": "siuhy [T]",
-        "victim_position": [
-          1989.2659,
-          176.94295,
-          160.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:35",
+        "timestamp": "19m48.640587776s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          2226.2104,
-          1213.0829,
-          180.03125
-        ],
         "killer_place": "Arch",
         "victim": "iM [CT]",
-        "victim_position": [
-          1863.9072,
-          1161.0531,
-          163.28632
-        ],
         "victim_place": "Arch",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:34",
+        "timestamp": "19m49.609340928s",
         "killer": "Aleksib [CT]",
-        "killer_position": [
-          1846.4495,
-          264.16064,
-          220.03128
-        ],
         "killer_place": "BombsiteA",
         "victim": "torzsi [T]",
-        "victim_position": [
-          2083.313,
-          117.9085,
-          138.97903
-        ],
         "victim_place": "BombsiteA",
         "weapon": "M4A1",
         "headshot": true
       },
       {
         "time": "0:34",
+        "timestamp": "19m49.656264704s",
         "killer": "Jimpphat [T]",
-        "killer_position": [
-          2395.6245,
-          9.558455,
-          132.41122
-        ],
         "killer_place": "BombsiteA",
         "victim": "Aleksib [CT]",
-        "victim_position": [
-          1846.4495,
-          264.16064,
-          220.03128
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:44",
+        "timestamp": "19m58.406238208s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          2425.0334,
-          512.1225,
-          236.03125
-        ],
         "killer_place": "Graveyard",
         "victim": "jL [CT]",
-        "victim_position": [
-          2198.626,
-          703.59735,
-          158.12885
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": true
@@ -1174,7 +694,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "19m58.124957696s",
         "player": "Jimpphat [T]",
         "player_position": [
           1822.5021,
@@ -1194,38 +715,20 @@
     "kill_events": [
       {
         "time": "1:17",
+        "timestamp": "20m42.374995968s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          615.37573,
-          1977.9579,
-          136.03125
-        ],
         "killer_place": "Banana",
         "victim": "jL [CT]",
-        "victim_position": [
-          949.9298,
-          2774.278,
-          133.20143
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "1:12",
+        "timestamp": "20m46.437441536s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          705.2994,
-          2482.183,
-          136.03146
-        ],
         "killer_place": "BombsiteB",
         "victim": "Aleksib [CT]",
-        "victim_position": [
-          607.90454,
-          2704.8552,
-          157.03154
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": false
@@ -1233,7 +736,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "20m58.593714176s",
         "player": "xertioN [T]",
         "player_position": [
           548.1405,
@@ -1253,152 +757,80 @@
     "kill_events": [
       {
         "time": "1:16",
+        "timestamp": "22m23.890653184s",
         "killer": "b1t [CT]",
-        "killer_position": [
-          1215.7205,
-          -286.43634,
-          260.03125
-        ],
         "killer_place": "Apartments",
         "victim": "Jimpphat [T]",
-        "victim_position": [
-          1232.6534,
-          -689.933,
-          128.03125
-        ],
         "victim_place": "Apartments",
         "weapon": "MP9",
         "headshot": false
       },
       {
         "time": "1:03",
+        "timestamp": "22m36.781191168s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          1424.5194,
-          587.7598,
-          117.630226
-        ],
         "killer_place": "TopofMid",
         "victim": "w0nderful [CT]",
-        "victim_position": [
-          1397.9436,
-          -32.68506,
-          132.03125
-        ],
         "victim_place": "Quad",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "1:02",
+        "timestamp": "22m37.734346752s",
         "killer": "iM [CT]",
-        "killer_position": [
-          1385.189,
-          1210.6495,
-          178.93008
-        ],
         "killer_place": "TopofMid",
         "victim": "Brollan [T]",
-        "victim_position": [
-          1445.7838,
-          572.85474,
-          118.05371
-        ],
         "victim_place": "TopofMid",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "1:01",
+        "timestamp": "22m39.562539008s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          1239.5258,
-          447.9776,
-          117.4334
-        ],
         "killer_place": "Middle",
         "victim": "jL [CT]",
-        "victim_position": [
-          1597.6829,
-          1204.3586,
-          229.36551
-        ],
         "victim_place": "Arch",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:57",
+        "timestamp": "22m42.89058816s",
         "killer": "siuhy [T]",
-        "killer_position": [
-          1341.5831,
-          476.88602,
-          119.823326
-        ],
         "killer_place": "Middle",
         "victim": "iM [CT]",
-        "victim_position": [
-          1464.1263,
-          1193.196,
-          177.11806
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:53",
+        "timestamp": "22m46.765600768s",
         "killer": "b1t [CT]",
-        "killer_position": [
-          2072.176,
-          158.2423,
-          160.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "siuhy [T]",
-        "victim_position": [
-          1347.4911,
-          111.86605,
-          138.03125
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:47",
+        "timestamp": "22m52.96871424s",
         "killer": "b1t [CT]",
-        "killer_position": [
-          2222.5974,
-          271.01978,
-          137.5102
-        ],
         "killer_place": "BombsiteA",
         "victim": "xertioN [T]",
-        "victim_position": [
-          2070.2969,
-          70.42744,
-          126.58415
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:08",
+        "timestamp": "23m32.531224576s",
         "killer": "Aleksib [CT]",
-        "killer_position": [
-          1267.9193,
-          -292.75354,
-          260.03125
-        ],
         "killer_place": "Apartments",
         "victim": "torzsi [T]",
-        "victim_position": [
-          1872.3428,
-          -303.50586,
-          261.03125
-        ],
         "victim_place": "Apartments",
         "weapon": "M4A1",
         "headshot": true
@@ -1413,133 +845,70 @@
     "kill_events": [
       {
         "time": "1:11",
+        "timestamp": "24m21.90630912s",
         "killer": "jL [CT]",
-        "killer_position": [
-          860.93884,
-          2310.888,
-          140.0843
-        ],
         "killer_place": "BombsiteB",
         "victim": "siuhy [T]",
-        "victim_position": [
-          480.30704,
-          1899.2438,
-          136.03123
-        ],
         "victim_place": "Banana",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "1:11",
+        "timestamp": "24m22.109339648s",
         "killer": "xertioN [T]",
-        "killer_position": [
-          358.7378,
-          1834.515,
-          136.11934
-        ],
         "killer_place": "Banana",
         "victim": "jL [CT]",
-        "victim_position": [
-          855.5872,
-          2306.6494,
-          140.0843
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:55",
+        "timestamp": "24m38.015582208s",
         "killer": "Aleksib [CT]",
-        "killer_position": [
-          499.29367,
-          2604.9004,
-          161.53123
-        ],
         "killer_place": "BombsiteB",
         "victim": "xertioN [T]",
-        "victim_position": [
-          785.44495,
-          2800.0657,
-          142.88748
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:30",
+        "timestamp": "25m2.609408s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          772.272,
-          2911.9504,
-          141.03888
-        ],
         "killer_place": "BombsiteB",
         "victim": "Aleksib [CT]",
-        "victim_position": [
-          284.95557,
-          2456.9504,
-          167.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:27",
+        "timestamp": "25m6.343780352s",
         "killer": "torzsi [T]",
-        "killer_position": [
-          435.32956,
-          2938.1096,
-          161.53125
-        ],
         "killer_place": "BombsiteB",
         "victim": "iM [CT]",
-        "victim_position": [
-          542.211,
-          3447.3682,
-          161.9945
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AWP",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:32",
+        "timestamp": "25m25.999992832s",
         "killer": "torzsi [T]",
-        "killer_position": [
-          506.16583,
-          3349.2031,
-          167.03125
-        ],
         "killer_place": "BombsiteB",
         "victim": "b1t [CT]",
-        "victim_position": [
-          969.5423,
-          3436.9146,
-          128.03125
-        ],
         "victim_place": "Ruins",
         "weapon": "AWP",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:26",
+        "timestamp": "25m32.453060608s",
         "killer": "Brollan [T]",
-        "killer_position": [
-          891.2056,
-          2747.278,
-          134.9559
-        ],
         "killer_place": "BombsiteB",
         "victim": "w0nderful [CT]",
-        "victim_position": [
-          1169.413,
-          2821.0854,
-          128.69547
-        ],
         "victim_place": "Ruins",
         "weapon": "AK-47",
         "headshot": false
@@ -1547,7 +916,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "25m13.062531072s",
         "player": "Brollan [T]",
         "player_position": [
           548.766,
@@ -1567,76 +937,40 @@
     "kill_events": [
       {
         "time": "0:00",
+        "timestamp": "30m14.296920064s",
         "killer": "b1t [T]",
-        "killer_position": [
-          360.68326,
-          1884.2091,
-          137.03125
-        ],
         "killer_place": "Banana",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          603.71893,
-          1891.7072,
-          136.03125
-        ],
         "victim_place": "Banana",
         "weapon": "Glock-18",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "30m18.937524224s",
         "killer": "siuhy [CT]",
-        "killer_position": [
-          905.17633,
-          1881.2241,
-          144.84795
-        ],
         "killer_place": "Banana",
         "victim": "b1t [T]",
-        "victim_position": [
-          640.3882,
-          1901.1719,
-          170.03125
-        ],
         "victim_place": "Banana",
         "weapon": "USP-S",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "30m23.984320512s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          616.44806,
-          2106.5227,
-          140.13982
-        ],
         "killer_place": "Banana",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          748.03125,
-          1880.0281,
-          144.03125
-        ],
         "victim_place": "Banana",
         "weapon": "Glock-18",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "30m28.812488704s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          795.59283,
-          2137.8875,
-          136.03131
-        ],
         "killer_place": "Banana",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          530.6655,
-          3150.0432,
-          210.04532
-        ],
         "victim_place": "BombsiteB",
         "weapon": "Glock-18",
         "headshot": false
@@ -1644,7 +978,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "30m38.546812928s",
         "player": "w0nderful [T]",
         "player_position": [
           548.09814,
@@ -1664,152 +999,80 @@
     "kill_events": [
       {
         "time": "1:18",
+        "timestamp": "32m1.593769984s",
         "killer": "iM [T]",
-        "killer_position": [
-          937.9329,
-          427.4248,
-          96.03125
-        ],
         "killer_place": "Middle",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          1483.435,
-          563.4169,
-          118.702934
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "1:18",
+        "timestamp": "32m1.796931584s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1469.2499,
-          623.59766,
-          120.63444
-        ],
         "killer_place": "TopofMid",
         "victim": "iM [T]",
-        "victim_position": [
-          938.5237,
-          424.4804,
-          96.03125
-        ],
         "victim_place": "Middle",
         "weapon": "FAMAS",
         "headshot": false
       },
       {
         "time": "0:51",
+        "timestamp": "32m28.937486336s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1482.465,
-          216.32791,
-          129.43648
-        ],
         "killer_place": "TopofMid",
         "victim": "w0nderful [T]",
-        "victim_position": [
-          1188.9473,
-          559.41614,
-          121.56575
-        ],
         "victim_place": "Middle",
         "weapon": "FAMAS",
         "headshot": true
       },
       {
         "time": "0:51",
+        "timestamp": "32m29.48431872s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          1222.5741,
-          457.73453,
-          116.077286
-        ],
         "killer_place": "Middle",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          1601.4961,
-          1218.1984,
-          177.03125
-        ],
         "victim_place": "Arch",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:50",
+        "timestamp": "32m30.046879744s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1480.5117,
-          279.80396,
-          128.03125
-        ],
         "killer_place": "TopofMid",
         "victim": "b1t [T]",
-        "victim_position": [
-          1239.3195,
-          364.78098,
-          128.03125
-        ],
         "victim_place": "Apartments",
         "weapon": "FAMAS",
         "headshot": true
       },
       {
         "time": "0:49",
+        "timestamp": "32m30.98443776s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1486.5835,
-          319.09818,
-          132.4157
-        ],
         "killer_place": "TopofMid",
         "victim": "Aleksib [T]",
-        "victim_position": [
-          1199.9701,
-          557.09674,
-          122.41366
-        ],
         "victim_place": "Middle",
         "weapon": "FAMAS",
         "headshot": true
       },
       {
         "time": "0:49",
+        "timestamp": "32m31.359434752s",
         "killer": "jL [T]",
-        "killer_position": [
-          1110.5175,
-          572.25836,
-          115.532684
-        ],
         "killer_place": "Middle",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          1484.6016,
-          316.33014,
-          128.03125
-        ],
         "victim_place": "TopofMid",
         "weapon": "MAC-10",
         "headshot": false
       },
       {
         "time": "0:44",
+        "timestamp": "32m36.21879808s",
         "killer": "Jimpphat [CT]",
-        "killer_position": [
-          1641.2391,
-          -86.08362,
-          142.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "jL [T]",
-        "victim_position": [
-          1421.3676,
-          236.86258,
-          182.57668
-        ],
         "victim_place": "TopofMid",
         "weapon": "FAMAS",
         "headshot": true
@@ -1824,152 +1087,80 @@
     "kill_events": [
       {
         "time": "0:47",
+        "timestamp": "33m50.046937088s",
         "killer": "iM [T]",
-        "killer_position": [
-          1248.172,
-          362.01544,
-          128.03125
-        ],
         "killer_place": "Apartments",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          1741.935,
-          -61.87195,
-          140.88963
-        ],
         "victim_place": "BombsiteA",
         "weapon": "Desert Eagle",
         "headshot": true
       },
       {
         "time": "0:38",
+        "timestamp": "33m59.171907584s",
         "killer": "xertioN [CT]",
-        "killer_position": [
-          87.58113,
-          694.95667,
-          80.34721
-        ],
         "killer_place": "Middle",
         "victim": "Aleksib [T]",
-        "victim_position": [
-          1091.0186,
-          461.03833,
-          105.67832
-        ],
         "victim_place": "Middle",
         "weapon": "MP9",
         "headshot": true
       },
       {
         "time": "0:36",
+        "timestamp": "34m0.921849856s",
         "killer": "siuhy [CT]",
-        "killer_position": [
-          2059.693,
-          318.715,
-          160.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "w0nderful [T]",
-        "victim_position": [
-          2075.7087,
-          -212.57587,
-          262.03125
-        ],
         "victim_place": "Balcony",
         "weapon": "MP9",
         "headshot": true
       },
       {
         "time": "0:35",
+        "timestamp": "34m1.296846848s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1512.9065,
-          1237.4066,
-          175.76025
-        ],
         "killer_place": "Arch",
         "victim": "jL [T]",
-        "victim_position": [
-          1324.4701,
-          670.096,
-          133.44252
-        ],
         "victim_place": "Middle",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:35",
+        "timestamp": "34m1.390563328s",
         "killer": "iM [T]",
-        "killer_position": [
-          1297.0701,
-          308.72876,
-          129.53125
-        ],
         "killer_place": "Apartments",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          1517.2017,
-          1235.9646,
-          175.74265
-        ],
         "victim_place": "Arch",
         "weapon": "Desert Eagle",
         "headshot": false
       },
       {
         "time": "0:31",
+        "timestamp": "34m5.2343808s",
         "killer": "b1t [T]",
-        "killer_position": [
-          1966.9948,
-          232.85002,
-          160.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          2054.8206,
-          332.57397,
-          160.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "Tec-9",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:29",
+        "timestamp": "34m26.031312896s",
         "killer": "b1t [T]",
-        "killer_position": [
-          1886.157,
-          347.11053,
-          161.03122
-        ],
         "killer_place": "BombsiteA",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          2468.1067,
-          945.034,
-          167.83168
-        ],
         "victim_place": "BombsiteA",
         "weapon": "MP9",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:15",
+        "timestamp": "34m39.250055168s",
         "killer": "iM [T]",
-        "killer_position": [
-          2046.0917,
-          -223.02106,
-          262.03125
-        ],
         "killer_place": "Balcony",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          2289.7456,
-          679.9079,
-          150.46782
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
@@ -1977,7 +1168,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "34m10.124939264s",
         "player": "b1t [T]",
         "player_position": [
           1893.6748,
@@ -1997,57 +1189,30 @@
     "kill_events": [
       {
         "time": "0:51",
+        "timestamp": "35m48.28122112s",
         "killer": "jL [T]",
-        "killer_position": [
-          705.2605,
-          1962.8986,
-          136.03127
-        ],
         "killer_place": "Banana",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          739.48785,
-          2224.5242,
-          136.0313
-        ],
         "victim_place": "Banana",
         "weapon": "M4A1",
         "headshot": true
       },
       {
         "time": "0:50",
+        "timestamp": "35m49.67189504s",
         "killer": "Brollan [CT]",
-        "killer_position": [
-          877.03,
-          2180.007,
-          136.36627
-        ],
         "killer_place": "Banana",
         "victim": "jL [T]",
-        "victim_position": [
-          606.53595,
-          1989.6102,
-          136.03125
-        ],
         "victim_place": "Banana",
         "weapon": "Five-SeveN",
         "headshot": true
       },
       {
         "time": "0:49",
+        "timestamp": "35m50.765559808s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          196.55717,
-          1749.6498,
-          121.26996
-        ],
         "killer_place": "Banana",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          815.54517,
-          2252.142,
-          186.08365
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": false
@@ -2055,7 +1220,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "36m20.781309952s",
         "player": "iM [T]",
         "player_position": [
           547.3529,
@@ -2075,114 +1241,60 @@
     "kill_events": [
       {
         "time": "1:22",
+        "timestamp": "37m40.187480064s",
         "killer": "jL [T]",
-        "killer_position": [
-          260.55908,
-          1867.725,
-          130.33188
-        ],
         "killer_place": "Banana",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          733.5164,
-          1917.6982,
-          209.0455
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "1:20",
+        "timestamp": "37m42.031138816s",
         "killer": "jL [T]",
-        "killer_position": [
-          255.23546,
-          1820.3518,
-          127.2916
-        ],
         "killer_place": "Banana",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          858.7143,
-          2128.549,
-          136.36629
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "1:20",
+        "timestamp": "37m42.656352256s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1453.0137,
-          461.76245,
-          120.26151
-        ],
         "killer_place": "TopofMid",
         "victim": "iM [T]",
-        "victim_position": [
-          290.71436,
-          669.1717,
-          22.19062
-        ],
         "victim_place": "Underpass",
         "weapon": "SSG 08",
         "headshot": true
       },
       {
         "time": "0:51",
+        "timestamp": "38m11.0468096s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          759.2582,
-          2796.1296,
-          142.88748
-        ],
         "killer_place": "BombsiteB",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          442.51163,
-          2510.2935,
-          163.26744
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A1",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:40",
+        "timestamp": "38m27.04676864s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          264.4998,
-          3021.0457,
-          161.02684
-        ],
         "killer_place": "BombsiteB",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          597.7192,
-          3418.918,
-          163.27332
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:20",
+        "timestamp": "38m47.484301312s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          919.04346,
-          193.34264,
-          162.03125
-        ],
         "killer_place": "SecondMid",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          971.69684,
-          -642.74695,
-          97.54674
-        ],
         "victim_place": "BackAlley",
         "weapon": "AK-47",
         "headshot": false
@@ -2190,7 +1302,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "38m22.5156096s",
         "player": "w0nderful [T]",
         "player_position": [
           547.1206,
@@ -2210,133 +1323,70 @@
     "kill_events": [
       {
         "time": "1:09",
+        "timestamp": "39m39.125096448s",
         "killer": "siuhy [CT]",
-        "killer_position": [
-          1299.1064,
-          1203.4231,
-          181.03125
-        ],
         "killer_place": "TopofMid",
         "victim": "Aleksib [T]",
-        "victim_position": [
-          1678.213,
-          1036.9464,
-          158.83537
-        ],
         "victim_place": "Arch",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "1:08",
+        "timestamp": "39m40.37499904s",
         "killer": "siuhy [CT]",
-        "killer_position": [
-          1345.2833,
-          1223.2296,
-          181.03125
-        ],
         "killer_place": "TopofMid",
         "victim": "iM [T]",
-        "victim_position": [
-          1448.6012,
-          876.54553,
-          142.15085
-        ],
         "victim_place": "TopofMid",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "1:08",
+        "timestamp": "39m40.468846592s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          1413.1243,
-          876.1014,
-          143.29512
-        ],
         "killer_place": "TopofMid",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          1345.6084,
-          1223.3265,
-          181.03125
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "1:05",
+        "timestamp": "39m43.281127424s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1806.421,
-          1246.112,
-          169.03125
-        ],
         "killer_place": "Arch",
         "victim": "w0nderful [T]",
-        "victim_position": [
-          1425.5254,
-          965.07983,
-          150.30652
-        ],
         "victim_place": "TopofMid",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:58",
+        "timestamp": "39m49.765521408s",
         "killer": "Jimpphat [CT]",
-        "killer_position": [
-          2601.1614,
-          -133.42657,
-          97.555504
-        ],
         "killer_place": "Pit",
         "victim": "b1t [T]",
-        "victim_position": [
-          2088.1562,
-          107.09488,
-          134.3925
-        ],
         "victim_place": "BombsiteA",
         "weapon": "M4A1",
         "headshot": true
       },
       {
         "time": "0:43",
+        "timestamp": "40m5.26557184s",
         "killer": "jL [T]",
-        "killer_position": [
-          2063.6235,
-          165.5294,
-          160.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          2452.3135,
-          -517.86096,
-          114.58536
-        ],
         "victim_place": "Pit",
         "weapon": "AK-47",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:44",
+        "timestamp": "40m11.484413952s",
         "killer": "Brollan [CT]",
-        "killer_position": [
-          1341.552,
-          151.91766,
-          138.03125
-        ],
         "killer_place": "TopofMid",
         "victim": "jL [T]",
-        "victim_position": [
-          2043.313,
-          40.788475,
-          125.81377
-        ],
         "victim_place": "BombsiteA",
         "weapon": "M4A1",
         "headshot": false
@@ -2344,7 +1394,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "40m10.093740032s",
         "player": "jL [T]",
         "player_position": [
           2085.1885,
@@ -2356,7 +1407,8 @@
         "success": true
       },
       {
-        "time": "0:00",
+        "time": "0:28",
+        "timestamp": "",
         "player": "xertioN [CT]",
         "player_position": [
           2099.7117,
@@ -2376,133 +1428,70 @@
     "kill_events": [
       {
         "time": "0:37",
+        "timestamp": "41m49.984497664s",
         "killer": "Brollan [CT]",
-        "killer_position": [
-          862.2958,
-          2250.7688,
-          140.0843
-        ],
         "killer_place": "BombsiteB",
         "victim": "jL [T]",
-        "victim_position": [
-          335.95032,
-          1843.9902,
-          135.14821
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:27",
+        "timestamp": "41m59.656300544s",
         "killer": "b1t [T]",
-        "killer_position": [
-          1894.9954,
-          -208.4972,
-          260.03125
-        ],
         "killer_place": "Apartments",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          2491.412,
-          -35.523254,
-          105.54605
-        ],
         "victim_place": "Pit",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:23",
+        "timestamp": "42m4.359426048s",
         "killer": "b1t [T]",
-        "killer_position": [
-          2218.2427,
-          -329.14142,
-          98.42859
-        ],
         "killer_place": "Pit",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          2231.0796,
-          1185.1783,
-          180.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:06",
+        "timestamp": "42m21.453049856s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          732.58466,
-          375.03714,
-          93.943855
-        ],
         "killer_place": "SecondMid",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          1060.2422,
-          489.59525,
-          103.340866
-        ],
         "victim_place": "Middle",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:01",
+        "timestamp": "42m26.468651008s",
         "killer": "Brollan [CT]",
-        "killer_position": [
-          1494.4606,
-          252.93782,
-          132.958
-        ],
         "killer_place": "TopofMid",
         "victim": "b1t [T]",
-        "victim_position": [
-          1474.7258,
-          -75.73041,
-          132.03125
-        ],
         "victim_place": "Quad",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "42m28.281376768s",
         "killer": "iM [T]",
-        "killer_position": [
-          1922.4249,
-          93.84869,
-          129.98218
-        ],
         "killer_place": "BombsiteA",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          1451.5072,
-          123.72137,
-          132.03125
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:41",
+        "timestamp": "42m39.453167616s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          1255.6742,
-          365.7244,
-          128.03125
-        ],
         "killer_place": "Apartments",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          1592.8845,
-          -58.807007,
-          139.23927
-        ],
         "victim_place": "Quad",
         "weapon": "AK-47",
         "headshot": true
@@ -2510,7 +1499,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "42m35.43738368s",
         "player": "w0nderful [T]",
         "player_position": [
           1822.1707,
@@ -2530,95 +1520,50 @@
     "kill_events": [
       {
         "time": "0:56",
+        "timestamp": "43m44.140607488s",
         "killer": "iM [T]",
-        "killer_position": [
-          848.68774,
-          673.83496,
-          96.03125
-        ],
         "killer_place": "Middle",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          1476.6633,
-          330.43857,
-          128.03125
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:51",
+        "timestamp": "43m49.281251328s",
         "killer": "jL [T]",
-        "killer_position": [
-          1018.49664,
-          1860.8922,
-          144.03125
-        ],
         "killer_place": "Banana",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          701.7315,
-          2129.643,
-          136.03133
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:35",
+        "timestamp": "44m5.078048768s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          703.08923,
-          2203.4155,
-          136.0313
-        ],
         "killer_place": "Banana",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          813.972,
-          2911.796,
-          148.0321
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:31",
+        "timestamp": "44m8.703238144s",
         "killer": "b1t [T]",
-        "killer_position": [
-          553.6632,
-          2526.2043,
-          296.0729
-        ],
         "killer_place": "BombsiteB",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          1335.641,
-          2873.9963,
-          128.69547
-        ],
         "victim_place": "Ruins",
         "weapon": "AK-47",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:34",
+        "timestamp": "44m30.45306368s",
         "killer": "b1t [T]",
-        "killer_position": [
-          54.956757,
-          670.1245,
-          81.03125
-        ],
         "killer_place": "Middle",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          1477.4828,
-          411.3611,
-          129.03125
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": true
@@ -2626,7 +1571,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "44m20.218699776s",
         "player": "Aleksib [T]",
         "player_position": [
           546.86786,
@@ -2646,133 +1592,70 @@
     "kill_events": [
       {
         "time": "0:47",
+        "timestamp": "45m44.109498368s",
         "killer": "jL [T]",
-        "killer_position": [
-          369.53577,
-          1686.6298,
-          188.06253
-        ],
         "killer_place": "Banana",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          746.4093,
-          2172.6423,
-          136.0313
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:46",
+        "timestamp": "45m44.703254528s",
         "killer": "jL [T]",
-        "killer_position": [
-          377.24963,
-          1679.9807,
-          188.06253
-        ],
         "killer_place": "Banana",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          808.74646,
-          2327.6858,
-          136.03146
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:45",
+        "timestamp": "45m45.906233344s",
         "killer": "xertioN [CT]",
-        "killer_position": [
-          637.88794,
-          2082.5115,
-          139.33388
-        ],
         "killer_place": "Banana",
         "victim": "jL [T]",
-        "victim_position": [
-          404.27933,
-          1740.2313,
-          241.93234
-        ],
         "victim_place": "Banana",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:30",
+        "timestamp": "46m0.640561152s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1905.5844,
-          -268.35596,
-          260.03125
-        ],
         "killer_place": "Apartments",
         "victim": "b1t [T]",
-        "victim_position": [
-          1250.3597,
-          -359.1504,
-          260.03125
-        ],
         "victim_place": "Apartments",
         "weapon": "AWP",
         "headshot": false
       },
       {
         "time": "0:28",
+        "timestamp": "46m2.468753408s",
         "killer": "iM [T]",
-        "killer_position": [
-          1862.0061,
-          6.503987,
-          132.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          2063.3323,
-          -165.11267,
-          262.03125
-        ],
         "victim_place": "Balcony",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:26",
+        "timestamp": "46m4.765659136s",
         "killer": "Jimpphat [CT]",
-        "killer_position": [
-          2011.2708,
-          -173.86292,
-          257.67032
-        ],
         "killer_place": "Balcony",
         "victim": "iM [T]",
-        "victim_position": [
-          1853.2157,
-          0.80263746,
-          132.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "M4A1",
         "headshot": false
       },
       {
         "time": "0:25",
+        "timestamp": "46m6.156333056s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          1390.9039,
-          192.00919,
-          131.17354
-        ],
         "killer_place": "TopofMid",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          2059.4907,
-          -156.7992,
-          262.03125
-        ],
         "victim_place": "Balcony",
         "weapon": "AK-47",
         "headshot": true
@@ -2780,7 +1663,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "46m16.015568896s",
         "player": "w0nderful [T]",
         "player_position": [
           1991.8497,
@@ -2800,171 +1684,90 @@
     "kill_events": [
       {
         "time": "0:40",
+        "timestamp": "48m17.687609344s",
         "killer": "b1t [T]",
-        "killer_position": [
-          1125.0465,
-          -687.37695,
-          128.03125
-        ],
         "killer_place": "Apartments",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          1285.2928,
-          -294.0849,
-          260.03125
-        ],
         "victim_place": "Apartments",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:39",
+        "timestamp": "48m18.10939904s",
         "killer": "xertioN [CT]",
-        "killer_position": [
-          747.8298,
-          1952.1729,
-          136.68513
-        ],
         "killer_place": "Banana",
         "victim": "jL [T]",
-        "victim_position": [
-          249.06435,
-          1852.6029,
-          131.12862
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:31",
+        "timestamp": "48m26.171899904s",
         "killer": "xertioN [CT]",
-        "killer_position": [
-          839.89386,
-          1973.8751,
-          136.03128
-        ],
         "killer_place": "Banana",
         "victim": "Aleksib [T]",
-        "victim_position": [
-          318.414,
-          1891.3575,
-          137.03125
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:01",
+        "timestamp": "48m56.23431168s",
         "killer": "iM [T]",
-        "killer_position": [
-          391.38742,
-          1852.7072,
-          226.03127
-        ],
         "killer_place": "Banana",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          751.9105,
-          1934.2423,
-          144.03125
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": true
       },
       {
         "time": "0:01",
+        "timestamp": "48m56.531320832s",
         "killer": "xertioN [CT]",
-        "killer_position": [
-          709.55164,
-          1894.0538,
-          215.03125
-        ],
         "killer_place": "Banana",
         "victim": "iM [T]",
-        "victim_position": [
-          391.50015,
-          1851.8416,
-          226.03127
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "48m57.312509952s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          310.08215,
-          1862.4727,
-          137.03125
-        ],
         "killer_place": "Banana",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          710.08716,
-          1894.2659,
-          215.03125
-        ],
         "victim_place": "Banana",
         "weapon": "AK-47",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:21",
+        "timestamp": "49m31.687452672s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          94.32331,
-          3005.2722,
-          160.99464
-        ],
         "killer_place": "BombsiteB",
         "victim": "w0nderful [T]",
-        "victim_position": [
-          59.46875,
-          3244.9688,
-          160.96288
-        ],
         "victim_place": "BombsiteB",
         "weapon": "M4A1",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:20",
+        "timestamp": "49m32.01565696s",
         "killer": "b1t [T]",
-        "killer_position": [
-          861.9653,
-          2513.5103,
-          140.0843
-        ],
         "killer_place": "BombsiteB",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          82.069496,
-          2993.9805,
-          161.03125
-        ],
         "victim_place": "BombsiteB",
         "weapon": "AK-47",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:20",
+        "timestamp": "49m32.234285056s",
         "killer": "Jimpphat [CT]",
-        "killer_position": [
-          898.261,
-          2745.3967,
-          134.74406
-        ],
         "killer_place": "BombsiteB",
         "victim": "b1t [T]",
-        "victim_position": [
-          862.1246,
-          2513.816,
-          140.0843
-        ],
         "victim_place": "BombsiteB",
         "weapon": "MP9",
         "headshot": false
@@ -2972,7 +1775,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "49m7.250126848s",
         "player": "w0nderful [T]",
         "player_position": [
           546.69617,
@@ -2984,7 +1788,8 @@
         "success": true
       },
       {
-        "time": "0:00",
+        "time": "0:08",
+        "timestamp": "",
         "player": "Jimpphat [CT]",
         "player_position": [
           542.48444,
@@ -3004,171 +1809,90 @@
     "kill_events": [
       {
         "time": "0:01",
+        "timestamp": "51m44.078036992s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1867.3926,
-          610.2127,
-          159.98256
-        ],
         "killer_place": "BombsiteA",
         "victim": "Aleksib [T]",
-        "victim_position": [
-          2051.2788,
-          166.44891,
-          160.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "FAMAS",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "51m44.515555328s",
         "killer": "b1t [T]",
-        "killer_position": [
-          2031.5659,
-          -233.44305,
-          262.03125
-        ],
         "killer_place": "Balcony",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          2376.2124,
-          -361.52777,
-          91.52857
-        ],
         "victim_place": "Pit",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "51m44.843759616s",
         "killer": "torzsi [CT]",
-        "killer_position": [
-          1833.2588,
-          609.34033,
-          159.94176
-        ],
         "killer_place": "BombsiteA",
         "victim": "b1t [T]",
-        "victim_position": [
-          2034.832,
-          -227.02905,
-          262.03125
-        ],
         "victim_place": "Balcony",
         "weapon": "FAMAS",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "51m53.8906112s",
         "killer": "siuhy [CT]",
-        "killer_position": [
-          1827.1417,
-          254.1708,
-          220.03128
-        ],
         "killer_place": "BombsiteA",
         "victim": "w0nderful [T]",
-        "victim_position": [
-          2091.7598,
-          151.06122,
-          160.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "FAMAS",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "51m54.187620352s",
         "killer": "iM [T]",
-        "killer_position": [
-          2367.953,
-          934.9704,
-          160.6448
-        ],
         "killer_place": "BombsiteA",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          1827.157,
-          254.24083,
-          220.03128
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "51m56.187516928s",
         "killer": "iM [T]",
-        "killer_position": [
-          2406.857,
-          736.17444,
-          172.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          1820.1935,
-          613.5233,
-          159.92413
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "51m58.703050752s",
         "killer": "Brollan [CT]",
-        "killer_position": [
-          2581.9355,
-          1326.2891,
-          160.03125
-        ],
         "killer_place": "Library",
         "victim": "iM [T]",
-        "victim_position": [
-          2216.16,
-          788.7556,
-          159.61992
-        ],
         "victim_place": "BombsiteA",
         "weapon": "M4A1",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:43",
+        "timestamp": "52m2.859343872s",
         "killer": "jL [T]",
-        "killer_position": [
-          1992.0516,
-          481.8826,
-          160.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          2277.15,
-          823.70105,
-          151.96275
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:42",
+        "timestamp": "52m3.687456768s",
         "killer": "xertioN [CT]",
-        "killer_position": [
-          2025.5991,
-          243.70462,
-          209.03125
-        ],
         "killer_place": "BombsiteA",
         "victim": "jL [T]",
-        "victim_position": [
-          1983.5907,
-          483.1767,
-          160.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "M4A1",
         "headshot": true
@@ -3176,7 +1900,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "52m1.281236992s",
         "player": "jL [T]",
         "player_position": [
           1819.0314,
@@ -3188,7 +1913,8 @@
         "success": true
       },
       {
-        "time": "0:00",
+        "time": "0:30",
+        "timestamp": "",
         "player": "xertioN [CT]",
         "player_position": [
           1835.6439,
@@ -3208,190 +1934,100 @@
     "kill_events": [
       {
         "time": "0:01",
+        "timestamp": "54m14.843867136s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          1503.969,
-          519.638,
-          120.03125
-        ],
         "killer_place": "TopofMid",
         "victim": "torzsi [CT]",
-        "victim_position": [
-          1466.9115,
-          1199.8478,
-          177.11806
-        ],
         "victim_place": "TopofMid",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "54m15.843684352s",
         "killer": "w0nderful [T]",
-        "killer_position": [
-          1243.8131,
-          452.05508,
-          117.77639
-        ],
         "killer_place": "Middle",
         "victim": "Brollan [CT]",
-        "victim_position": [
-          1594.6387,
-          1224.7379,
-          177.03125
-        ],
         "victim_place": "Arch",
         "weapon": "AWP",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "54m21.640736768s",
         "killer": "b1t [T]",
-        "killer_position": [
-          2051.917,
-          -235.89117,
-          262.03125
-        ],
         "killer_place": "Balcony",
         "victim": "Jimpphat [CT]",
-        "victim_position": [
-          1967.4506,
-          187.03746,
-          160.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "54m22.906368s",
         "killer": "siuhy [CT]",
-        "killer_position": [
-          2199.3513,
-          286.69974,
-          156.27802
-        ],
         "killer_place": "BombsiteA",
         "victim": "b1t [T]",
-        "victim_position": [
-          2110.3462,
-          -238.47803,
-          251.12773
-        ],
         "victim_place": "Balcony",
         "weapon": "M4A1",
         "headshot": true
       },
       {
         "time": "0:00",
+        "timestamp": "54m23.26550528s",
         "killer": "Aleksib [T]",
-        "killer_position": [
-          2250.3,
-          1018.903,
-          160.07193
-        ],
         "killer_place": "BombsiteA",
         "victim": "siuhy [CT]",
-        "victim_position": [
-          2195.753,
-          287.2972,
-          159.39014
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
-        "time": "0:00",
+        "time": "0:25",
+        "timestamp": "54m52.421947392s",
         "killer": "xertioN [CT]",
-        "killer_position": [
-          2630.9062,
-          1068.493,
-          209.03125
-        ],
         "killer_place": "Library",
         "victim": "iM [T]",
-        "victim_position": [
-          1590.1343,
-          1178.2001,
-          177.03125
-        ],
         "victim_place": "Arch",
         "weapon": "AK-47",
         "headshot": true
       },
       {
-        "time": "0:00",
+        "time": "0:23",
+        "timestamp": "54m54.49996288s",
         "killer": "jL [T]",
-        "killer_position": [
-          1929.6965,
-          -184.95837,
-          260.03125
-        ],
         "killer_place": "Apartments",
         "victim": "xertioN [CT]",
-        "victim_position": [
-          2408.2021,
-          1133.5223,
-          174.54294
-        ],
         "victim_place": "BombsiteA",
         "weapon": "AK-47",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "55m13.187422208s",
         "killer": "Unknown",
-        "killer_position": [
-          0,
-          0,
-          0
-        ],
         "killer_place": "",
         "victim": "w0nderful [T]",
-        "victim_position": [
-          2008.5359,
-          631.0768,
-          160.03125
-        ],
         "victim_place": "BombsiteA",
         "weapon": "C4",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "55m13.187422208s",
         "killer": "Unknown",
-        "killer_position": [
-          0,
-          0,
-          0
-        ],
         "killer_place": "",
         "victim": "Aleksib [T]",
-        "victim_position": [
-          2496.9695,
-          969.9687,
-          172.31204
-        ],
         "victim_place": "BombsiteA",
         "weapon": "C4",
         "headshot": false
       },
       {
         "time": "0:00",
+        "timestamp": "55m13.187422208s",
         "killer": "Unknown",
-        "killer_position": [
-          0,
-          0,
-          0
-        ],
         "killer_place": "",
         "victim": "jL [T]",
-        "victim_position": [
-          1929.6965,
-          -184.95837,
-          260.03125
-        ],
         "victim_place": "Apartments",
         "weapon": "C4",
         "headshot": false
@@ -3399,7 +2035,8 @@
     ],
     "bomb_events": [
       {
-        "time": "0:00",
+        "time": "0:45",
+        "timestamp": "54m32.18757632s",
         "player": "w0nderful [T]",
         "player_position": [
           2013.9688,
