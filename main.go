@@ -8,41 +8,44 @@ import (
 	"time"
 
 	dem "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs"
-	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
 	common "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/common"
+	events "github.com/markus-wa/demoinfocs-golang/v4/pkg/demoinfocs/events"
 )
 
 // Constants for round time
-const roundTimeStart = 115 // Round time starts at 1:55 (115 seconds)
-const bombTimer = 45       // Bomb timer is usually 45 seconds after the bomb is planted
+const ROUND_TIMER = 115 // Round time starts at 1:55 (115 seconds)
+const BOMB_TIMER = 45   // Bomb timer is usually 45 seconds after the bomb is planted
 
 // KillEvent represents a kill event in the demo
 type KillEvent struct {
-	Time      string    `json:"time"`     // Time in the round (e.g., 1:23)
-	Killer    string    `json:"killer"`   // Killer's name with team indicator
-	KillerPos [3]float32 `json:"killer_position"` // Killer's position (x, y, z)
-	Victim    string    `json:"victim"`   // Victim's name with team indicator
-	VictimPos [3]float32 `json:"victim_position"` // Victim's position (x, y, z)
-	Weapon    string    `json:"weapon"`   // Weapon used
-	Headshot  bool      `json:"headshot"` // Was it a headshot?
+	Time        string `json:"time"` // Time in the round (e.g., 1:23)
+	Timestamp   string `json:"timestamp"`
+	Killer      string `json:"killer"`       // Killer's name with team indicator
+	KillerPlace string `json:"killer_place"` // Map location of the killer
+	Victim      string `json:"victim"`       // Victim's name with team indicator
+	VictimPlace string `json:"victim_place"` // Map location of the victim
+	Weapon      string `json:"weapon"`       // Weapon used
+	Headshot    bool   `json:"headshot"`     // Was it a head-shot?
 }
 
 // BombEvent represents a bomb-related event (plant or defuse)
 type BombEvent struct {
-	Time      string    `json:"time"`      // Time in the round (e.g., 1:23)
-	Player    string    `json:"player"`    // Player's name with team indicator
+	Time      string     `json:"time"` // Time in the round (e.g., 1:23)
+	Timestamp string     `json:"timestamp"`
+	Player    string     `json:"player"`          // Player's name with team indicator
 	PlayerPos [3]float32 `json:"player_position"` // Player's position (x, y, z)
-	Action    string    `json:"action"`    // "plant" or "defuse"
-	Success   bool      `json:"success"`   // Was the action successful?
+	BombPlace string     `json:"bomb_place"`      // Where the bomb was planted or defused
+	Action    string     `json:"action"`          // "plant" or "defuse"
+	Success   bool       `json:"success"`         // Was the action successful?
 }
 
 // RoundInfo represents all events that happened in a specific round
 type RoundInfo struct {
-	RoundNumber int          `json:"round_number"`
-	TScore      int          `json:"t_score"`    // Score of Terrorists
-	CTScore     int          `json:"ct_score"`   // Score of Counter-Terrorists
-	KillEvents  []KillEvent  `json:"kill_events"`
-	BombEvents  []BombEvent  `json:"bomb_events"`
+	RoundNumber int         `json:"round_number"`
+	TScore      int         `json:"t_score"`  // Score of Terrorists
+	CTScore     int         `json:"ct_score"` // Score of Counter-Terrorists
+	KillEvents  []KillEvent `json:"kill_events"`
+	BombEvents  []BombEvent `json:"bomb_events"`
 }
 
 // formatTime calculates and formats the time remaining in the round
@@ -75,7 +78,7 @@ func getPlayerNameWithTeam(player *common.Player) string {
 }
 
 func main() {
-	f, err := os.Open("faze-navi.dem") // Replace with your actual demo file path
+	f, err := os.Open("demos/natus-vincere-vs-mouz-m1-inferno.dem") // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -84,11 +87,11 @@ func main() {
 	p := dem.NewParser(f)
 	defer p.Close()
 
-	var rounds []*RoundInfo  // Use a slice of pointers to track round data
-	var currentRound *RoundInfo // Pointer to track the current round
-	var roundStartTime time.Duration // To track when each round starts
-	roundTimeRemaining := roundTimeStart // To track the round time remaining
-	isBombPlanted := false  // To track whether the bomb is planted
+	var rounds []*RoundInfo           // Use a slice of pointers to track round data
+	var currentRound *RoundInfo       // Pointer to track the current round
+	var roundStartTime time.Duration  // To track when each round starts
+	roundTimeRemaining := ROUND_TIMER // To track the round time remaining
+	isBombPlanted := false            // To track whether the bomb is planted
 
 	// Track round number manually
 	roundNumber := 0
@@ -97,8 +100,9 @@ func main() {
 	p.RegisterEventHandler(func(e events.RoundStart) {
 		roundNumber++
 		roundStartTime = p.CurrentTime() // Reset round start time to the current demo time
-		roundTimeRemaining = roundTimeStart // Reset round time to 1:55
-		isBombPlanted = false // Reset bomb planted state at the start of a new round
+		log.Printf("New round started at %s", roundStartTime.String())
+		roundTimeRemaining = ROUND_TIMER // Reset round time to 1:55
+		isBombPlanted = false            // Reset bomb planted state at the start of a new round
 
 		currentRound = &RoundInfo{
 			RoundNumber: roundNumber,
@@ -115,36 +119,32 @@ func main() {
 			killerName := getPlayerNameWithTeam(e.Killer)
 			victimName := getPlayerNameWithTeam(e.Victim)
 
-			killerPos := [3]float32{}
-			victimPos := [3]float32{}
+			killerPlace := ""
+			victimPlace := ""
 
-			// Get positions (cast to float32)
+			// Get player positions on map call-outs
 			if e.Killer != nil {
-				killerPos = [3]float32{
-					float32(e.Killer.Position().X),
-					float32(e.Killer.Position().Y),
-					float32(e.Killer.Position().Z),
-				}
+				killerPlace = e.Killer.LastPlaceName()
 			}
+
 			if e.Victim != nil {
-				victimPos = [3]float32{
-					float32(e.Victim.Position().X),
-					float32(e.Victim.Position().Y),
-					float32(e.Victim.Position().Z),
-				}
+				victimPlace = e.Victim.LastPlaceName()
 			}
 
 			// Calculate time remaining in the round based on the round timer
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
 
+			log.Printf("Elapsed time before kill %s", int(p.CurrentTime().Seconds()-roundStartTime.Seconds()), roundTimeRemaining)
+
 			killEvent := KillEvent{
-				Time:      elapsedTime, // Format time as MM:SS
-				Killer:    killerName,
-				KillerPos: killerPos,
-				Victim:    victimName,
-				VictimPos: victimPos,
-				Weapon:    e.Weapon.String(),
-				Headshot:  e.IsHeadshot,
+				Time:        elapsedTime, // Format time as MM:SS
+				Timestamp:   p.CurrentTime().String(),
+				Killer:      killerName,
+				KillerPlace: killerPlace,
+				Victim:      victimName,
+				VictimPlace: victimPlace,
+				Weapon:      e.Weapon.String(),
+				Headshot:    e.IsHeadshot,
 			}
 			currentRound.KillEvents = append(currentRound.KillEvents, killEvent)
 		}
@@ -153,27 +153,34 @@ func main() {
 	// Register handler for bomb plant events
 	p.RegisterEventHandler(func(e events.BombPlanted) {
 		if currentRound != nil {
-			playerName := getPlayerNameWithTeam(e.Player)
 			playerPos := [3]float32{}
+			bombPlace := ""
+			playerName := ""
 			if e.Player != nil {
+				playerName = getPlayerNameWithTeam(e.Player)
+				bombPlace = e.Player.LastPlaceName()
 				playerPos = [3]float32{
 					float32(e.Player.Position().X),
 					float32(e.Player.Position().Y),
 					float32(e.Player.Position().Z),
 				}
 			}
-
 			// Bomb has been planted, set the bomb timer (usually 45 seconds)
 			isBombPlanted = true // Track that the bomb is planted
-			roundTimeRemaining = bombTimer // Set to 45 seconds after plant
+
+			// Compute remaining time in the round after bomb plant
+			bombPlantTime := int(p.CurrentTime().Milliseconds()-roundStartTime.Milliseconds()) / 1000
+			roundTimeRemaining = bombPlantTime + BOMB_TIMER // Add 45 seconds after plant time
 
 			// Calculate time remaining in the round
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
 
 			bombEvent := BombEvent{
 				Time:      elapsedTime, // Format time as MM:SS
+				Timestamp: p.CurrentTime().String(),
 				Player:    playerName,
 				PlayerPos: playerPos,
+				BombPlace: bombPlace,
 				Action:    "plant",
 				Success:   true,
 			}
@@ -212,7 +219,7 @@ func main() {
 	p.RegisterEventHandler(func(e events.RoundEnd) {
 		if currentRound != nil {
 			// Reset the timer to 115 seconds for the next round
-			roundTimeRemaining = roundTimeStart
+			roundTimeRemaining = ROUND_TIMER
 			currentRound.TScore = p.GameState().TeamTerrorists().Score()
 			currentRound.CTScore = p.GameState().TeamCounterTerrorists().Score()
 		}

@@ -1,0 +1,1422 @@
+<?xml version="1.0" ?>
+<log xmlns="http://www.xes-standard.org/" xes.version="1.0" xes.features="" openxes.version="1.0RC7">
+	<trace>
+		<string key="round_number" value="1"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="0:47"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="Glock-18"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="torzsi [T]"/>
+			<string key="weapon" value="USP-S"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="b1t [CT]"/>
+			<string key="weapon" value="Glock-18"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="USP-S"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Jimpphat [T]"/>
+			<string key="weapon" value="USP-S"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="w0nderful [CT]"/>
+			<string key="weapon" value="Glock-18"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Aleksib [CT]"/>
+			<string key="weapon" value="Glock-18"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="Dual Berettas"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="2"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="0:28"/>
+			<string key="victim" value="w0nderful [CT]"/>
+			<string key="weapon" value="MAC-10"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="0:25"/>
+			<string key="victim" value="b1t [CT]"/>
+			<string key="weapon" value="MAC-10"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="torzsi [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="3"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [CT]"/>
+			<date key="timestamp" value="0:45"/>
+			<string key="victim" value="Brollan [T]"/>
+			<string key="weapon" value="Five-SeveN"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="0:34"/>
+			<string key="victim" value="Aleksib [CT]"/>
+			<string key="weapon" value="MAC-10"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="0:24"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="MAC-10"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="0:21"/>
+			<string key="victim" value="w0nderful [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:21"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:12"/>
+			<string key="victim" value="torzsi [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:07"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="0:05"/>
+			<string key="victim" value="iM [CT]"/>
+			<string key="weapon" value="MAC-10"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [CT]"/>
+			<date key="timestamp" value="0:05"/>
+			<string key="victim" value="Jimpphat [T]"/>
+			<string key="weapon" value="Five-SeveN"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="4"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Brollan [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Aleksib [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Jimpphat [T]"/>
+			<string key="weapon" value="M4A4"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="torzsi [T]"/>
+			<string key="weapon" value="M4A4"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="torzsi [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_defuse"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="5"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:57"/>
+			<string key="victim" value="Brollan [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:55"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:53"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:50"/>
+			<string key="victim" value="torzsi [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:47"/>
+			<string key="victim" value="b1t [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:47"/>
+			<string key="victim" value="Jimpphat [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="6"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="1:25"/>
+			<string key="victim" value="iM [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [CT]"/>
+			<date key="timestamp" value="1:22"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="1:16"/>
+			<string key="victim" value="w0nderful [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [T]"/>
+			<date key="timestamp" value="1:07"/>
+			<string key="victim" value="b1t [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="torzsi [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="7"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="0:26"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Aleksib [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="8"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:31"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="AWP"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:28"/>
+			<string key="victim" value="Brollan [T]"/>
+			<string key="weapon" value="AWP"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:27"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="0:24"/>
+			<string key="victim" value="b1t [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="0:23"/>
+			<string key="victim" value="Jimpphat [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="9"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="1:17"/>
+			<string key="victim" value="b1t [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [CT]"/>
+			<date key="timestamp" value="0:50"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="AWP"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="0:45"/>
+			<string key="victim" value="w0nderful [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [CT]"/>
+			<date key="timestamp" value="0:38"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:35"/>
+			<string key="victim" value="iM [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [CT]"/>
+			<date key="timestamp" value="0:34"/>
+			<string key="victim" value="torzsi [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="0:34"/>
+			<string key="victim" value="Aleksib [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="Jimpphat [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="10"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="1:17"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="1:12"/>
+			<string key="victim" value="Aleksib [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="11"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [CT]"/>
+			<date key="timestamp" value="1:16"/>
+			<string key="victim" value="Jimpphat [T]"/>
+			<string key="weapon" value="MP9"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="1:03"/>
+			<string key="victim" value="w0nderful [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [CT]"/>
+			<date key="timestamp" value="1:02"/>
+			<string key="victim" value="Brollan [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="1:01"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [T]"/>
+			<date key="timestamp" value="0:57"/>
+			<string key="victim" value="iM [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [CT]"/>
+			<date key="timestamp" value="0:53"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [CT]"/>
+			<date key="timestamp" value="0:47"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [CT]"/>
+			<date key="timestamp" value="0:08"/>
+			<string key="victim" value="torzsi [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="12"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [CT]"/>
+			<date key="timestamp" value="1:11"/>
+			<string key="victim" value="siuhy [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [T]"/>
+			<date key="timestamp" value="1:11"/>
+			<string key="victim" value="jL [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [CT]"/>
+			<date key="timestamp" value="0:55"/>
+			<string key="victim" value="xertioN [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:30"/>
+			<string key="victim" value="Aleksib [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [T]"/>
+			<date key="timestamp" value="0:27"/>
+			<string key="victim" value="iM [CT]"/>
+			<string key="weapon" value="AWP"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="b1t [CT]"/>
+			<string key="weapon" value="AWP"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="w0nderful [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="Brollan [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="13"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="Glock-18"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="USP-S"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="Glock-18"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="Glock-18"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="14"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="1:18"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="1:18"/>
+			<string key="victim" value="iM [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:51"/>
+			<string key="victim" value="w0nderful [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:51"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:50"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:49"/>
+			<string key="victim" value="Aleksib [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:49"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="MAC-10"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [CT]"/>
+			<date key="timestamp" value="0:44"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="15"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:47"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="Desert Eagle"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:38"/>
+			<string key="victim" value="Aleksib [T]"/>
+			<string key="weapon" value="MP9"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [CT]"/>
+			<date key="timestamp" value="0:36"/>
+			<string key="victim" value="w0nderful [T]"/>
+			<string key="weapon" value="MP9"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:35"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:35"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="Desert Eagle"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:31"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="Tec-9"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="MP9"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="16"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:51"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [CT]"/>
+			<date key="timestamp" value="0:50"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="Five-SeveN"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:49"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="17"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="1:22"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="1:20"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="1:20"/>
+			<string key="victim" value="iM [T]"/>
+			<string key="weapon" value="SSG 08"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:51"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="18"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [CT]"/>
+			<date key="timestamp" value="1:09"/>
+			<string key="victim" value="Aleksib [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [CT]"/>
+			<date key="timestamp" value="1:08"/>
+			<string key="victim" value="iM [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="1:08"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="1:05"/>
+			<string key="victim" value="w0nderful [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [CT]"/>
+			<date key="timestamp" value="0:58"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:43"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_defuse"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="19"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [CT]"/>
+			<date key="timestamp" value="0:37"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:27"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:23"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:06"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [CT]"/>
+			<date key="timestamp" value="0:01"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="20"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:56"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:51"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:35"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:31"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="21"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:47"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:46"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:45"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:30"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="AWP"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:28"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [CT]"/>
+			<date key="timestamp" value="0:26"/>
+			<string key="victim" value="iM [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:25"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="22"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:40"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:39"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:31"/>
+			<string key="victim" value="Aleksib [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:01"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:01"/>
+			<string key="victim" value="iM [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="w0nderful [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Jimpphat [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="MP9"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_defuse"/>
+			<string key="player" value="Jimpphat [CT]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="23"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:01"/>
+			<string key="victim" value="Aleksib [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="torzsi [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="w0nderful [T]"/>
+			<string key="weapon" value="FAMAS"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="iM [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Brollan [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="iM [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_defuse"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="round_number" value="24"/>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:01"/>
+			<string key="victim" value="torzsi [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Brollan [CT]"/>
+			<string key="weapon" value="AWP"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="b1t [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Jimpphat [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="siuhy [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="b1t [T]"/>
+			<string key="weapon" value="M4A1"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Aleksib [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="siuhy [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="xertioN [CT]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="iM [T]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="true"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="jL [T]"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="xertioN [CT]"/>
+			<string key="weapon" value="AK-47"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Unknown"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="w0nderful [T]"/>
+			<string key="weapon" value="C4"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Unknown"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="Aleksib [T]"/>
+			<string key="weapon" value="C4"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="kill"/>
+			<string key="player" value="Unknown"/>
+			<date key="timestamp" value="0:00"/>
+			<string key="victim" value="jL [T]"/>
+			<string key="weapon" value="C4"/>
+			<boolean key="headshot" value="false"/>
+		</event>
+		<event>
+			<string key="event_type" value="bomb_plant"/>
+			<string key="player" value="w0nderful [T]"/>
+			<date key="timestamp" value="0:00"/>
+		</event>
+	</trace>
+</log>
