@@ -33,6 +33,7 @@ type BombEvent struct {
 	Time      string     `json:"time"` // Time in the round (e.g., 1:23)
 	Timestamp string     `json:"timestamp"`
 	Player    string     `json:"player"`          // Player's name with team indicator
+	PlayerPos [3]float32 `json:"player_position"` // Player's position (x, y, z)
 	BombPlace string     `json:"bomb_place"`      // Where the bomb was planted or defused
 	Action    string     `json:"action"`          // "plant" or "defuse"
 	Success   bool       `json:"success"`         // Was the action successful?
@@ -53,6 +54,7 @@ type GrenadeEvent struct {
 	Time      string     `json:"time"` // Time in the round (e.g., 1:23)
 	Timestamp string     `json:"timestamp"`
 	Player    string     `json:"player"`          // Player's name with team indicator
+	PlayerPos [3]float32 `json:"player_position"` // Player's position (x, y, z)
 	Place     string     `json:"place"`           // Place where the grenade was thrown
 	Grenade   string     `json:"grenade"`         // Type of grenade
 }
@@ -180,11 +182,17 @@ func main() {
 	// Register handler for bomb plant events
 	p.RegisterEventHandler(func(e events.BombPlanted) {
 		if currentRound != nil {
+			playerPos := [3]float32{}
 			bombPlace := ""
 			playerName := ""
 			if e.Player != nil {
 				playerName = getPlayerNameWithTeam(e.Player)
 				bombPlace = e.Player.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Player.Position().X),
+					float32(e.Player.Position().Y),
+					float32(e.Player.Position().Z),
+				}
 			}
 			// Calculate time remaining in the round
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
@@ -200,6 +208,7 @@ func main() {
 				Time:      elapsedTime, // Format time as MM:SS
 				Timestamp: p.CurrentTime().String(),
 				Player:    playerName,
+				PlayerPos: playerPos,
 				BombPlace: bombPlace,
 				Action:    "plant",
 				Success:   true,
@@ -212,6 +221,14 @@ func main() {
 	p.RegisterEventHandler(func(e events.BombDefused) {
 		if currentRound != nil && isBombPlanted {
 			playerName := getPlayerNameWithTeam(e.Player)
+			playerPos := [3]float32{}
+			if e.Player != nil {
+				playerPos = [3]float32{
+					float32(e.Player.Position().X),
+					float32(e.Player.Position().Y),
+					float32(e.Player.Position().Z),
+				}
+			}
 
 			// Calculate time remaining in the round
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
@@ -219,6 +236,7 @@ func main() {
 			bombEvent := BombEvent{
 				Time:      elapsedTime, // Format time as MM:SS
 				Player:    playerName,
+				PlayerPos: playerPos,
 				Action:    "defuse",
 				Success:   true,
 			}
@@ -239,11 +257,17 @@ func main() {
 	// Register handler for HE grenade explosion events (HE grenades explode, not thrown)
 	p.RegisterEventHandler(func(e events.HeExplode) {
 		if currentRound != nil {
+			playerPos := [3]float32{}
 			place := ""
 			playerName := ""
 			if e.Thrower != nil {
 				playerName = getPlayerNameWithTeam(e.Thrower)
 				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
 			}
 
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
@@ -252,6 +276,7 @@ func main() {
 				Time:      elapsedTime, // Format time as MM:SS
 				Timestamp: p.CurrentTime().String(),
 				Player:    playerName,
+				PlayerPos: playerPos,
 				Place:     place,
 				Grenade:   "HE Grenade",
 			}
@@ -262,11 +287,17 @@ func main() {
 	// Register handler for flashbang explosion events
 	p.RegisterEventHandler(func(e events.FlashExplode) {
 		if currentRound != nil {
+			playerPos := [3]float32{}
 			place := ""
 			playerName := ""
 			if e.Thrower != nil {
 				playerName = getPlayerNameWithTeam(e.Thrower)
 				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
 			}
 
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
@@ -275,6 +306,7 @@ func main() {
 				Time:      elapsedTime, // Format time as MM:SS
 				Timestamp: p.CurrentTime().String(),
 				Player:    playerName,
+				PlayerPos: playerPos,
 				Place:     place,
 				Grenade:   "Flashbang",
 			}
@@ -285,11 +317,17 @@ func main() {
 	// Register handler for smoke grenade throw events
 	p.RegisterEventHandler(func(e events.SmokeStart) {
 		if currentRound != nil {
+			playerPos := [3]float32{}
 			place := ""
 			playerName := ""
 			if e.Thrower != nil {
 				playerName = getPlayerNameWithTeam(e.Thrower)
 				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
 			}
 
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
@@ -298,6 +336,7 @@ func main() {
 				Time:      elapsedTime, // Format time as MM:SS
 				Timestamp: p.CurrentTime().String(),
 				Player:    playerName,
+				PlayerPos: playerPos,
 				Place:     place,
 				Grenade:   "Smoke Grenade",
 			}
@@ -306,13 +345,19 @@ func main() {
 	})
 
 	// Register handler for Molotov/Incendiary grenade throw events
-	p.RegisterEventHandler(func(e events.FireGrenadeStart) {
+	p.RegisterEventHandler(func(e events.GrenadeProjectileThrow) {
 		if currentRound != nil {
+			playerPos := [3]float32{}
 			place := ""
 			playerName := ""
-			if e.Thrower != nil {
-				playerName = getPlayerNameWithTeam(e.Thrower)
-				place = e.Thrower.LastPlaceName()
+			if e.Projectile.Thrower != nil {
+				playerName = getPlayerNameWithTeam(e.Projectile.Thrower)
+				place = e.Projectile.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Projectile.Thrower.Position().X),
+					float32(e.Projectile.Thrower.Position().Y),
+					float32(e.Projectile.Thrower.Position().Z),
+				}
 			}
 
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
@@ -321,6 +366,7 @@ func main() {
 				Time:      elapsedTime, // Format time as MM:SS
 				Timestamp: p.CurrentTime().String(),
 				Player:    playerName,
+				PlayerPos: playerPos,
 				Place:     place,
 				Grenade:   "Molotov",
 			}
@@ -331,11 +377,17 @@ func main() {
 	// Register handler for decoy grenade throw events
 	p.RegisterEventHandler(func(e events.DecoyStart) {
 		if currentRound != nil {
+			playerPos := [3]float32{}
 			place := ""
 			playerName := ""
 			if e.Thrower != nil {
 				playerName = getPlayerNameWithTeam(e.Thrower)
 				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
 			}
 
 			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
@@ -344,6 +396,7 @@ func main() {
 				Time:      elapsedTime, // Format time as MM:SS
 				Timestamp: p.CurrentTime().String(),
 				Player:    playerName,
+				PlayerPos: playerPos,
 				Place:     place,
 				Grenade:   "Decoy",
 			}
