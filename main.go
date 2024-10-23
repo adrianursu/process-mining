@@ -38,6 +38,7 @@ type RoundInfo struct {
 	RoundNumber   int            `json:"round_number"`
 	TScore        int            `json:"t_score"`  // Score of Terrorists
 	CTScore       int            `json:"ct_score"` // Score of Counter-Terrorists
+	Winner        string         `json:"winner"`
 	Timestamp     string         `json:"timestamp"`
 	KillEvents    []KillEvent    `json:"kill_events"`
 	BombEvents    []BombEvent    `json:"bomb_events"`
@@ -226,8 +227,11 @@ func main() {
 	// Register handler for round end events to capture final scores
 	p.RegisterEventHandler(func(e events.RoundEnd) {
 		if currentRound != nil {
-			currentRound.TScore = p.GameState().TeamTerrorists().Score()
-			currentRound.CTScore = p.GameState().TeamCounterTerrorists().Score()
+			if p.GameState().TeamTerrorists().Score()-currentRound.TScore == 1 {
+				currentRound.Winner = "T"
+			} else {
+				currentRound.Winner = "CT"
+			}
 		}
 	})
 
