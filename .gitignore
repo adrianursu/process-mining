@@ -3,4 +3,6 @@
 demos/** 
 test_main.txt
 go.sum
+**.json
+**.xes
 *.dem
