@@ -41,11 +41,32 @@ type BombEvent struct {
 
 // RoundInfo represents all events that happened in a specific round
 type RoundInfo struct {
-	RoundNumber int         `json:"round_number"`
-	TScore      int         `json:"t_score"`  // Score of Terrorists
-	CTScore     int         `json:"ct_score"` // Score of Counter-Terrorists
-	KillEvents  []KillEvent `json:"kill_events"`
-	BombEvents  []BombEvent `json:"bomb_events"`
+	RoundNumber   int            `json:"round_number"`
+	TScore        int            `json:"t_score"`  // Score of Terrorists
+	CTScore       int            `json:"ct_score"` // Score of Counter-Terrorists
+	KillEvents    []KillEvent    `json:"kill_events"`
+	BombEvents    []BombEvent    `json:"bomb_events"`
+	GrenadeEvents []GrenadeEvent `json:"grenade_events"` // List of grenade events
+	WeaponEvents  []WeaponEvent  `json:"weapon_events"`  // Weapons after freezetime
+}
+
+type GrenadeEvent struct {
+	Time      string     `json:"time"` // Time in the round (e.g., 1:23)
+	Timestamp string     `json:"timestamp"`
+	Player    string     `json:"player"`          // Player's name with team indicator
+	PlayerPos [3]float32 `json:"player_position"` // Player's position (x, y, z)
+	Place     string     `json:"place"`           // Place where the grenade was thrown
+	Grenade   string     `json:"grenade"`         // Type of grenade
+}
+
+// WeaponEvent represents the weapons a player has after the freezetime ends
+type WeaponEvent struct {
+	Player     string   `json:"player"`      // Player's name with team indicator
+	Weapons    []string `json:"weapons"`     // List of weapons the player is holding
+	Primary    string   `json:"primary"`     // Primary weapon (if available)
+	Secondary  string   `json:"secondary"`   // Secondary weapon (if available)
+	OtherEquip []string `json:"other_equip"` // Other equipment (grenades, etc.)
+	MoneyLeft  int      `json:"money_left"`  // Player's remaining money after freezetime
 }
 
 // formatTime calculates and formats the time remaining in the round
@@ -77,8 +98,16 @@ func getPlayerNameWithTeam(player *common.Player) string {
 	return player.Name
 }
 
+// Helper function to get the weapon's name
+func getWeaponName(weapon *common.Equipment) string {
+	if weapon != nil {
+		return weapon.Type.String()
+	}
+	return "Unknown"
+}
+
 func main() {
-	f, err := os.Open("demos/natus-vincere-vs-mouz-m1-inferno.dem") // Replace with your actual demo file path
+	f, err := os.Open("faze-navi.dem") // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -165,15 +194,15 @@ func main() {
 					float32(e.Player.Position().Z),
 				}
 			}
+			// Calculate time remaining in the round
+			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
+
 			// Bomb has been planted, set the bomb timer (usually 45 seconds)
 			isBombPlanted = true // Track that the bomb is planted
 
 			// Compute remaining time in the round after bomb plant
 			bombPlantTime := int(p.CurrentTime().Milliseconds()-roundStartTime.Milliseconds()) / 1000
 			roundTimeRemaining = bombPlantTime + BOMB_TIMER // Add 45 seconds after plant time
-
-			// Calculate time remaining in the round
-			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
 
 			bombEvent := BombEvent{
 				Time:      elapsedTime, // Format time as MM:SS
@@ -222,6 +251,206 @@ func main() {
 			roundTimeRemaining = ROUND_TIMER
 			currentRound.TScore = p.GameState().TeamTerrorists().Score()
 			currentRound.CTScore = p.GameState().TeamCounterTerrorists().Score()
+		}
+	})
+
+	// Register handler for HE grenade explosion events (HE grenades explode, not thrown)
+	p.RegisterEventHandler(func(e events.HeExplode) {
+		if currentRound != nil {
+			playerPos := [3]float32{}
+			place := ""
+			playerName := ""
+			if e.Thrower != nil {
+				playerName = getPlayerNameWithTeam(e.Thrower)
+				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
+			}
+
+			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
+
+			grenadeEvent := GrenadeEvent{
+				Time:      elapsedTime, // Format time as MM:SS
+				Timestamp: p.CurrentTime().String(),
+				Player:    playerName,
+				PlayerPos: playerPos,
+				Place:     place,
+				Grenade:   "HE Grenade",
+			}
+			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
+		}
+	})
+
+	// Register handler for flashbang explosion events
+	p.RegisterEventHandler(func(e events.FlashExplode) {
+		if currentRound != nil {
+			playerPos := [3]float32{}
+			place := ""
+			playerName := ""
+			if e.Thrower != nil {
+				playerName = getPlayerNameWithTeam(e.Thrower)
+				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
+			}
+
+			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
+
+			grenadeEvent := GrenadeEvent{
+				Time:      elapsedTime, // Format time as MM:SS
+				Timestamp: p.CurrentTime().String(),
+				Player:    playerName,
+				PlayerPos: playerPos,
+				Place:     place,
+				Grenade:   "Flashbang",
+			}
+			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
+		}
+	})
+
+	// Register handler for smoke grenade throw events
+	p.RegisterEventHandler(func(e events.SmokeStart) {
+		if currentRound != nil {
+			playerPos := [3]float32{}
+			place := ""
+			playerName := ""
+			if e.Thrower != nil {
+				playerName = getPlayerNameWithTeam(e.Thrower)
+				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
+			}
+
+			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
+
+			grenadeEvent := GrenadeEvent{
+				Time:      elapsedTime, // Format time as MM:SS
+				Timestamp: p.CurrentTime().String(),
+				Player:    playerName,
+				PlayerPos: playerPos,
+				Place:     place,
+				Grenade:   "Smoke Grenade",
+			}
+			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
+		}
+	})
+
+	// Register handler for Molotov/Incendiary grenade throw events
+	p.RegisterEventHandler(func(e events.FireGrenadeStart) {
+		if currentRound != nil {
+			playerPos := [3]float32{}
+			place := ""
+			playerName := ""
+			if e.Thrower != nil {
+				playerName = getPlayerNameWithTeam(e.Thrower)
+				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
+			}
+
+			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
+
+			grenadeEvent := GrenadeEvent{
+				Time:      elapsedTime, // Format time as MM:SS
+				Timestamp: p.CurrentTime().String(),
+				Player:    playerName,
+				PlayerPos: playerPos,
+				Place:     place,
+				Grenade:   "Molotov",
+			}
+			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
+		}
+	})
+
+	// Register handler for decoy grenade throw events
+	p.RegisterEventHandler(func(e events.DecoyStart) {
+		if currentRound != nil {
+			playerPos := [3]float32{}
+			place := ""
+			playerName := ""
+			if e.Thrower != nil {
+				playerName = getPlayerNameWithTeam(e.Thrower)
+				place = e.Thrower.LastPlaceName()
+				playerPos = [3]float32{
+					float32(e.Thrower.Position().X),
+					float32(e.Thrower.Position().Y),
+					float32(e.Thrower.Position().Z),
+				}
+			}
+
+			elapsedTime := formatTime(roundStartTime, p.CurrentTime(), roundTimeRemaining)
+
+			grenadeEvent := GrenadeEvent{
+				Time:      elapsedTime, // Format time as MM:SS
+				Timestamp: p.CurrentTime().String(),
+				Player:    playerName,
+				PlayerPos: playerPos,
+				Place:     place,
+				Grenade:   "Decoy",
+			}
+			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
+		}
+	})
+
+	// Register handler for when freezetime ends
+	p.RegisterEventHandler(func(e events.RoundFreezetimeEnd) {
+		if currentRound != nil {
+			weaponEvents := []WeaponEvent{}
+
+			// Get all players from both teams (T and CT)
+			for _, player := range p.GameState().Participants().Playing() {
+				playerName := getPlayerNameWithTeam(player)
+
+				// List to store the weapons the player is holding
+				var weapons []string
+				var primaryWeapon string
+				var secondaryWeapon string
+				var otherEquip []string
+
+				// Loop through player's inventory and sort weapons into primary, secondary, and other equipment
+				for _, weapon := range player.Weapons() {
+					weapons = append(weapons, getWeaponName(weapon))
+
+					// Classify weapons: primary, secondary, or other (grenades, etc.)
+					switch weapon.Class() {
+					case common.EqClassRifle, common.EqClassSMG, common.EqClassHeavy:
+						primaryWeapon = getWeaponName(weapon)
+					case common.EqClassPistols:
+						secondaryWeapon = getWeaponName(weapon)
+					default:
+						otherEquip = append(otherEquip, getWeaponName(weapon))
+					}
+				}
+
+				// Capture player's remaining money after the freezetime ends
+				moneyLeft := player.Money()
+
+				// Create a WeaponEvent for this player
+				weaponEvent := WeaponEvent{
+					Player:     playerName,
+					Weapons:    weapons,
+					Primary:    primaryWeapon,
+					Secondary:  secondaryWeapon,
+					OtherEquip: otherEquip,
+					MoneyLeft:  moneyLeft,
+				}
+				weaponEvents = append(weaponEvents, weaponEvent)
+			}
+
+			// Add weapon events to the current round
+			currentRound.WeaponEvents = weaponEvents
 		}
 	})
 
