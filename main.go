@@ -345,18 +345,18 @@ func main() {
 	})
 
 	// Register handler for Molotov/Incendiary grenade throw events
-	p.RegisterEventHandler(func(e events.FireGrenadeStart) {
+	p.RegisterEventHandler(func(e events.GrenadeProjectileThrow) {
 		if currentRound != nil {
 			playerPos := [3]float32{}
 			place := ""
 			playerName := ""
-			if e.Thrower != nil {
-				playerName = getPlayerNameWithTeam(e.Thrower)
-				place = e.Thrower.LastPlaceName()
+			if e.Projectile.Thrower != nil {
+				playerName = getPlayerNameWithTeam(e.Projectile.Thrower)
+				place = e.Projectile.Thrower.LastPlaceName()
 				playerPos = [3]float32{
-					float32(e.Thrower.Position().X),
-					float32(e.Thrower.Position().Y),
-					float32(e.Thrower.Position().Z),
+					float32(e.Projectile.Thrower.Position().X),
+					float32(e.Projectile.Thrower.Position().Y),
+					float32(e.Projectile.Thrower.Position().Z),
 				}
 			}
 
