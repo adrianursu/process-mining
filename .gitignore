@@ -3,3 +3,4 @@
 demos/** 
 test_main.txt
 go.sum
+*.dem

@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timedelta
 from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
 import xml.dom.minidom
 
@@ -9,13 +10,15 @@ with open("rounds_data.json") as f:
 # Helper function to create XES elements
 def create_trace(round_number, events):
     trace = Element("trace")
-    trace_round = SubElement(trace, "string", key="round_number", value=str(round_number))
+    trace_round = SubElement(trace, "string", key="concept:name", value=str(round_number))
+    time = datetime.now()
 
     for event in events:
+        event_time = event["time"].split(":")
         event_elem = SubElement(trace, "event")
-        SubElement(event_elem, "string", key="event_type", value=event["type"])
-        SubElement(event_elem, "string", key="player", value=event["player"])
-        SubElement(event_elem, "date", key="timestamp", value=event["time"])
+        SubElement(event_elem, "string", key="concept:name", value=event["type"])
+        SubElement(event_elem, "string", key="org:role", value=event["player"])
+        SubElement(event_elem, "date", key="time:timestamp", value=str(time - timedelta(minutes=int(event_time[0])) - timedelta(seconds=int(event_time[1]))))
         if "victim" in event:
             SubElement(event_elem, "string", key="victim", value=event["victim"])
         if "weapon" in event:
