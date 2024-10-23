@@ -230,8 +230,29 @@ func main() {
 	p.RegisterEventHandler(func(e events.RoundEnd) {
 		if currentRound != nil {
 			currentRound.EndTimestamp = DurationToISO8601(p.CurrentTime())
-			currentRound.EndReason = string(e.Reason)
-			currentRound.Winner = string(e.Winner)
+
+			switch e.Reason {
+			case events.RoundEndReasonBombDefused:
+				currentRound.EndReason = "BombDefused"
+			case events.RoundEndReasonCTWin:
+				currentRound.EndReason = "TEliminated"
+			case events.RoundEndReasonCTSurrender:
+				currentRound.EndReason = "CTSurrender"
+			case events.RoundEndReasonTerroristsWin:
+				currentRound.EndReason = "CTEliminated"
+			case events.RoundEndReasonTerroristsSurrender:
+				currentRound.EndReason = "TSurrender"
+			case events.RoundEndReasonTargetBombed:
+				currentRound.EndReason = "BombExploded"
+			case events.RoundEndReasonTargetSaved:
+				currentRound.EndReason = "TimeExpired"
+			}
+
+			if e.Winner == common.TeamTerrorists {
+				currentRound.Winner = "T"
+			} else {
+				currentRound.Winner = "CT"
+			}
 		}
 	})
 
