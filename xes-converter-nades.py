@@ -1,35 +1,33 @@
 import json
-from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
+from xml.etree.ElementTree import Element, SubElement, tostring
 import xml.dom.minidom
-from datetime import date, datetime, time, timedelta, timezone
 
 # Load JSON file
-with open("rounds_data.json") as f:
+with open("rounds_data_nades.json") as f:
     rounds_data = json.load(f)
 
 # Helper function to create XES elements
 def create_trace(round_number, events):
     trace = Element("trace")
-    trace_round = SubElement(trace, "string", key="concept:name", value=str(round_number))
+    trace_round = SubElement(trace, "string", key="round_number", value=str(round_number))
 
     for event in events:
-        parsed = event["time"].replace("T:", "T")
         event_elem = SubElement(trace, "event")
-        SubElement(event_elem, "string", key="concept:name", value=event["type"])
-        SubElement(event_elem, "string", key="org:role", value=event["player"])
-        minutes,secs = event["time"].split(":")
-        dt = datetime.combine(date.today(), time(hour=0,minute=5,tzinfo=datetime.now().astimezone().tzinfo))
-        dt = dt - timedelta(minutes=int(minutes),seconds=int(secs))
-        dt = dt.strftime("%Y-%m-%dT%H:%M:%S.%f%z")
-
-        SubElement(event_elem, "date", key="time:timestamp", value=dt)
+        SubElement(event_elem, "string", key="event_type", value=event["type"])
+        SubElement(event_elem, "string", key="player", value=event["player"])
+        SubElement(event_elem, "date", key="timestamp", value=event["time"])
+        
         if "victim" in event:
             SubElement(event_elem, "string", key="victim", value=event["victim"])
         if "weapon" in event:
             SubElement(event_elem, "string", key="weapon", value=event["weapon"])
         if "headshot" in event:
             SubElement(event_elem, "boolean", key="headshot", value=str(event["headshot"]).lower())
-
+        if "grenade" in event:
+            SubElement(event_elem, "string", key="grenade_type", value=event["grenade"])
+        if "place" in event:
+            SubElement(event_elem, "string", key="grenade_place", value=event["place"])
+    
     return trace
 
 # Create XES root element
@@ -44,7 +42,7 @@ for round_info in rounds_data:
     if "kill_events" in round_info:
         for kill in round_info["kill_events"]:
             events.append({
-                "type": kill["killer"].split(" ")[-1]+" kills "+kill["victim"].split(" ")[-1],
+                "type": "kill",
                 "time": kill["time"],
                 "player": kill["killer"],
                 "victim": kill["victim"],
@@ -57,8 +55,19 @@ for round_info in rounds_data:
         for bomb in round_info["bomb_events"]:
             events.append({
                 "type": f"bomb_{bomb['action']}",
-                "time": bomb["timestamp"],
+                "time": bomb["time"],
                 "player": bomb["player"]
+            })
+
+    # Process grenade events
+    if "grenade_events" in round_info and round_info["grenade_events"]:
+        for grenade in round_info["grenade_events"]:
+            events.append({
+                "type": "grenade",
+                "time": grenade["time"],
+                "player": grenade["player"],
+                "grenade": grenade["grenade"],
+                "place": grenade["place"]
             })
 
     # Add trace to log
@@ -69,7 +78,7 @@ for round_info in rounds_data:
 dom = xml.dom.minidom.parseString(tostring(xes_log))
 pretty_xml_as_string = dom.toprettyxml()
 
-with open("rounds_data.xes", "w") as xes_file:
+with open("rounds_data_nades.xes", "w") as xes_file:
     xes_file.write(pretty_xml_as_string)
 
-print("Conversion to XES completed. Saved as 'rounds_data.xes'.")
+print("Conversion to XES completed. Saved as 'rounds_data_nades.xes'.")
