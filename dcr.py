@@ -1,6 +1,8 @@
 import pm4py
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
 if __name__ == "__main__":
     log = pm4py.read_xes('rounds_data.xes')
-    dcr, initial_marking = pm4py.discover_dcr(log)
-    pm4py.view_dcr(dcr)
+    graph, _ = pm4py.discover_dcr(log)
+    pm4py.view_dcr(graph)

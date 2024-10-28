@@ -1,7 +1,7 @@
 import json
-from datetime import datetime, timedelta
 from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
 import xml.dom.minidom
+from datetime import date, datetime, time, timedelta, timezone
 
 # Load JSON file
 with open("rounds_data.json") as f:
@@ -11,14 +11,15 @@ with open("rounds_data.json") as f:
 def create_trace(round_number, events):
     trace = Element("trace")
     trace_round = SubElement(trace, "string", key="concept:name", value=str(round_number))
-    time = datetime.now()
 
     for event in events:
-        event_time = event["time"].split(":")
         event_elem = SubElement(trace, "event")
         SubElement(event_elem, "string", key="concept:name", value=event["type"])
         SubElement(event_elem, "string", key="org:role", value=event["player"])
-        SubElement(event_elem, "date", key="time:timestamp", value=str(time - timedelta(minutes=int(event_time[0])) - timedelta(seconds=int(event_time[1]))))
+        minutes,secs = event["time"].split(":")
+        dt = datetime.combine(date.today(), time(hour=0,minute=int(minutes), second=int(secs),tzinfo=datetime.now().astimezone().tzinfo))
+        dt = dt.strftime("%Y-%m-%dT%H:%M:%S.%f%z")
+        SubElement(event_elem, "date", key="time:timestamp", value=dt)
         if "victim" in event:
             SubElement(event_elem, "string", key="victim", value=event["victim"])
         if "weapon" in event:
