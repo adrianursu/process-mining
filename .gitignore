@@ -6,3 +6,4 @@ go.sum
 **.json
 **.xes
 *.dem
+*.json

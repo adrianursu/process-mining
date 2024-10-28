@@ -17,12 +17,8 @@ def create_trace(round_number, events):
         event_elem = SubElement(trace, "event")
         SubElement(event_elem, "string", key="concept:name", value=event["type"])
         SubElement(event_elem, "string", key="org:role", value=event["player"])
-        minutes,secs = event["time"].split(":")
-        dt = datetime.combine(date.today(), time(hour=0,minute=5,tzinfo=datetime.now().astimezone().tzinfo))
-        dt = dt - timedelta(minutes=int(minutes),seconds=int(secs))
-        dt = dt.strftime("%Y-%m-%dT%H:%M:%S.%f%z")
 
-        SubElement(event_elem, "date", key="time:timestamp", value=dt)
+        SubElement(event_elem, "date", key="time:timestamp", value=parsed)
         if "victim" in event:
             SubElement(event_elem, "string", key="victim", value=event["victim"])
         if "weapon" in event:
@@ -39,27 +35,27 @@ xes_log = Element("log", {"xes.version": "1.0", "xes.features": "", "openxes.ver
 for round_info in rounds_data:
     round_number = round_info["round_number"]
     events = []
-
     # Process kill events
     if "kill_events" in round_info:
         for kill in round_info["kill_events"]:
-            events.append({
-                "type": kill["killer"].split(" ")[-1]+" kills "+kill["victim"].split(" ")[-1],
-                "time": kill["time"],
-                "player": kill["killer"],
-                "victim": kill["victim"],
-                "weapon": kill["weapon"],
-                "headshot": kill["headshot"]
-            })
-
-    # Process bomb events
-    if "bomb_events" in round_info and round_info["bomb_events"]:
-        for bomb in round_info["bomb_events"]:
-            events.append({
-                "type": f"bomb_{bomb['action']}",
-                "time": bomb["timestamp"],
-                "player": bomb["player"]
-            })
+            if kill["killer"] == "Unknown":
+                events.append({
+                    "type": "Bomb explosion kills " + kill["victim"],
+                    "time": kill["timestamp"],
+                    "player": kill["killer"],
+                    "victim": kill["victim"],
+                    "weapon": kill["weapon"],
+                    "headshot": kill["headshot"]
+                })
+            else:
+                events.append({
+                    "type": kill["killer"]+" kills "+kill["victim"],
+                    "time": kill["timestamp"],
+                    "player": kill["killer"],
+                    "victim": kill["killer"],
+                    "weapon": kill["weapon"],
+                    "headshot": kill["headshot"]
+                })
     if "grenade_events" in round_info and round_info["grenade_events"]:
         for grenade in round_info["grenade_events"]:
             events.append({
@@ -73,11 +69,25 @@ for round_info in rounds_data:
     if "weapon_events" in round_info and round_info["weapon_events"]:
         for buy in round_info["weapon_events"]:
             events.append({
-                "type": "weapon",
+                "type": "buy",
                 "time": buy["timestamp"],
                 "player": buy["player"],
                 "weapon": buy["weapons"]
             })
+
+    # Process bomb events
+    if "bomb_events" in round_info and round_info["bomb_events"]:
+        for bomb in round_info["bomb_events"]:
+            events.append({
+                "type": f"bomb_{bomb['action']}",
+                "time": bomb["timestamp"],
+                "player": bomb["player"]
+            })
+    events.append({
+        "type": f"Win condition {round_info["end_reason"]}",
+        "time": round_info["end_timestamp"],
+        "player": round_info["winner"],
+    })
     # Add trace to log
     trace = create_trace(round_number, events)
     xes_log.append(trace)
