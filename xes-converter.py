@@ -60,7 +60,24 @@ for round_info in rounds_data:
                 "time": bomb["timestamp"],
                 "player": bomb["player"]
             })
-
+    if "grenade_events" in round_info and round_info["grenade_events"]:
+        for grenade in round_info["grenade_events"]:
+            events.append({
+                "type": "grenade",
+                "time": grenade["timestamp"],
+                "player": grenade["player"],
+                "player_position": grenade["player_position"],
+                "place": grenade["place"],
+                "grenade": grenade["grenade"]
+            })
+    if "weapon_events" in round_info and round_info["weapon_events"]:
+        for buy in round_info["weapon_events"]:
+            events.append({
+                "type": "weapon",
+                "time": buy["timestamp"],
+                "player": buy["player"],
+                "weapon": buy["weapons"]
+            })
     # Add trace to log
     trace = create_trace(round_number, events)
     xes_log.append(trace)

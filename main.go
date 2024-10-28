@@ -109,7 +109,7 @@ func getWeaponName(weapon *common.Equipment) string {
 }
 
 func main() {
-	f, err := os.Open("demos/natus-vincere-vs-mouz-m1-inferno.dem") // Replace with your actual demo file path
+	f, err := os.Open("furia-vs-natus-vincere-m1-nuke.dem") // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -432,6 +432,7 @@ func main() {
 					Secondary:  secondaryWeapon,
 					OtherEquip: otherEquip,
 					MoneyLeft:  moneyLeft,
+					Timestamp:  DurationToISO8601(p.CurrentTime()),
 				}
 				weaponEvents = append(weaponEvents, weaponEvent)
 			}
