@@ -3,57 +3,57 @@
 	<trace>
 		<string key="concept:name" value="1"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:18.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:42.000000+0100"/>
 			<string key="victim" value="Aleksib [CT]"/>
 			<string key="weapon" value="Glock-18"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:30.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:30.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="Glock-18"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="iM [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:29.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:31.000000+0100"/>
 			<string key="victim" value="FalleN [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:28.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:32.000000+0100"/>
 			<string key="victim" value="KSCERATO [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:25.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:35.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:23.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:37.000000+0100"/>
 			<string key="victim" value="chelo [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="jL [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:14.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:46.000000+0100"/>
 			<string key="victim" value="Skullz [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="false"/>
@@ -61,68 +61,68 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 		<event>
 			<string key="concept:name" value="bomb_defuse"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:09.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:51.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="2"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="b1t [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:22.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:38.000000+0100"/>
 			<string key="victim" value="chelo [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:14.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:46.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="Tec-9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:09.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:51.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="Tec-9"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:08.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:52.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:07.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:53.000000+0100"/>
 			<string key="victim" value="FalleN [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="Aleksib [CT]"/>
 			<string key="weapon" value="Tec-9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
@@ -131,17 +131,17 @@
 	<trace>
 		<string key="concept:name" value="3"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:21.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:39.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:26.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:34.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="Desert Eagle"/>
 			<boolean key="headshot" value="false"/>
@@ -149,47 +149,47 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="4"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:07.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:53.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:03.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:57.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:58.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:02.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:52.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:08.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:51.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:09.000000+0100"/>
 			<string key="victim" value="Aleksib [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
@@ -198,49 +198,49 @@
 	<trace>
 		<string key="concept:name" value="5"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:01.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:59.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Aleksib [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="iM [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="KSCERATO [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
@@ -249,57 +249,57 @@
 	<trace>
 		<string key="concept:name" value="6"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:10.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:50.000000+0100"/>
 			<string key="victim" value="Skullz [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="jL [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:00.000000+0100"/>
 			<string key="victim" value="chelo [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:56.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:04.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="iM [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:55.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:05.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:44.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:16.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="b1t [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:22.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:38.000000+0100"/>
 			<string key="victim" value="FalleN [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
@@ -308,73 +308,73 @@
 	<trace>
 		<string key="concept:name" value="7"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Aleksib [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:14.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:46.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:57.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:03.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="jL [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:47.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:13.000000+0100"/>
 			<string key="victim" value="KSCERATO [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:41.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:19.000000+0100"/>
 			<string key="victim" value="FalleN [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:28.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:32.000000+0100"/>
 			<string key="victim" value="Aleksib [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:29.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:31.000000+0100"/>
 			<string key="victim" value="chelo [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:27.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:33.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:24.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:36.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:24.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:36.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
@@ -382,39 +382,39 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="8"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:10.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:50.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:04.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:56.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="iM [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:34.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:26.000000+0100"/>
 			<string key="victim" value="FalleN [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:33.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:27.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
@@ -422,71 +422,71 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="9"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:19.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:41.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="jL [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:18.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:42.000000+0100"/>
 			<string key="victim" value="KSCERATO [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="b1t [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:13.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:47.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:43.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:17.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:40.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:20.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:33.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:27.000000+0100"/>
 			<string key="victim" value="Aleksib [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:24.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:36.000000+0100"/>
 			<string key="victim" value="Skullz [T]"/>
 			<string key="weapon" value="SSG 08"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:20.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:40.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
@@ -494,47 +494,47 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="10"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:49.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:11.000000+0100"/>
 			<string key="victim" value="FalleN [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Aleksib [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:36.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:24.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:11.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:49.000000+0100"/>
 			<string key="victim" value="chelo [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:10.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:50.000000+0100"/>
 			<string key="victim" value="Skullz [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
@@ -543,57 +543,57 @@
 	<trace>
 		<string key="concept:name" value="11"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Aleksib [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:03.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:57.000000+0100"/>
 			<string key="victim" value="yuurih [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="chelo [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="iM [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="chelo [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Aleksib [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="Skullz [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Aleksib [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="FalleN [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="iM [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="KSCERATO [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
@@ -602,65 +602,65 @@
 	<trace>
 		<string key="concept:name" value="12"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="KSCERATO [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:31.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:29.000000+0100"/>
 			<string key="victim" value="iM [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="jL [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:30.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:30.000000+0100"/>
 			<string key="victim" value="chelo [T]"/>
 			<string key="weapon" value="M4A4"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Aleksib [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:30.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:30.000000+0100"/>
 			<string key="victim" value="KSCERATO [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Skullz [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:25.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:35.000000+0100"/>
 			<string key="victim" value="jL [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="Aleksib [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="w0nderful [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="Skullz [T]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="w0nderful [CT]"/>
 			<string key="weapon" value="M4A4"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="FalleN [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:38.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:22.000000+0100"/>
 			<string key="victim" value="b1t [CT]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
@@ -668,71 +668,71 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="yuurih [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="13"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="b1t [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="FalleN [CT]"/>
 			<string key="weapon" value="Glock-18"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="yuurih [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="Skullz [CT]"/>
 			<string key="weapon" value="P250"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="w0nderful [T]"/>
 			<string key="weapon" value="USP-S"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Aleksib [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:41.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:19.000000+0100"/>
 			<string key="victim" value="chelo [CT]"/>
 			<string key="weapon" value="Glock-18"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="KSCERATO [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:29.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:31.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="Dual Berettas"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="iM [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:22.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:38.000000+0100"/>
 			<string key="victim" value="yuurih [CT]"/>
 			<string key="weapon" value="Glock-18"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="Unknown kills [T]"/>
 			<string key="org:role" value="Unknown"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:04.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:56.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="C4"/>
 			<boolean key="headshot" value="false"/>
@@ -740,63 +740,63 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="iM [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="14"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="KSCERATO [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:20.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:40.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="Dual Berettas"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="KSCERATO [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:19.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:41.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="Dual Berettas"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="jL [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:13.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:47.000000+0100"/>
 			<string key="victim" value="Skullz [CT]"/>
 			<string key="weapon" value="MAC-10"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="yuurih [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:04.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:56.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="Five-SeveN"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="KSCERATO [CT]"/>
 			<string key="weapon" value="Galil AR"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:05:00.000000+0100"/>
 			<string key="victim" value="w0nderful [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:44.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:16.000000+0100"/>
 			<string key="victim" value="Aleksib [T]"/>
 			<string key="weapon" value="Five-SeveN"/>
 			<boolean key="headshot" value="true"/>
@@ -804,60 +804,60 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="Aleksib [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 		<event>
 			<string key="concept:name" value="bomb_defuse"/>
 			<string key="org:role" value="yuurih [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:19.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:41.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="15"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:01.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:59.000000+0100"/>
 			<string key="victim" value="Aleksib [T]"/>
 			<string key="weapon" value="Galil AR"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:00.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="Galil AR"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:58.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:02.000000+0100"/>
 			<string key="victim" value="w0nderful [T]"/>
 			<string key="weapon" value="Galil AR"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="iM [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:57.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:03.000000+0100"/>
 			<string key="victim" value="FalleN [CT]"/>
 			<string key="weapon" value="Glock-18"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:56.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:04.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:53.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:07.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
@@ -866,17 +866,17 @@
 	<trace>
 		<string key="concept:name" value="16"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:32.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:28.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="jL [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:30.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:30.000000+0100"/>
 			<string key="victim" value="chelo [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
@@ -884,55 +884,55 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="Aleksib [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="17"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:22.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:38.000000+0100"/>
 			<string key="victim" value="w0nderful [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="iM [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:20.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:40.000000+0100"/>
 			<string key="victim" value="chelo [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:20.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:40.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Skullz [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:19.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:41.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="Galil AR"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="yuurih [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:11.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:49.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="KSCERATO [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:09.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:51.000000+0100"/>
 			<string key="victim" value="Aleksib [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
@@ -941,25 +941,25 @@
 	<trace>
 		<string key="concept:name" value="18"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="b1t [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:24.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:36.000000+0100"/>
 			<string key="victim" value="FalleN [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="b1t [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:24.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:03:36.000000+0100"/>
 			<string key="victim" value="chelo [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="KSCERATO [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:51.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:09.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
@@ -967,47 +967,47 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="Aleksib [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="19"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:57.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:03.000000+0100"/>
 			<string key="victim" value="FalleN [CT]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="jL [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:30.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:30.000000+0100"/>
 			<string key="victim" value="Skullz [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="b1t [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:17.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:43.000000+0100"/>
 			<string key="victim" value="chelo [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="iM [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:12.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:48.000000+0100"/>
 			<string key="victim" value="KSCERATO [CT]"/>
 			<string key="weapon" value="Molotov"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="iM [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:08.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:52.000000+0100"/>
 			<string key="victim" value="yuurih [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
@@ -1015,79 +1015,79 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="20"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="KSCERATO [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:40.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:20.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="KSCERATO [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:37.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:23.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="MP9"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:35.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:25.000000+0100"/>
 			<string key="victim" value="KSCERATO [CT]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:30.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:30.000000+0100"/>
 			<string key="victim" value="Skullz [CT]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:26.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:34.000000+0100"/>
 			<string key="victim" value="chelo [CT]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:11.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:49.000000+0100"/>
 			<string key="victim" value="yuurih [CT]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:13.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:47.000000+0100"/>
 			<string key="victim" value="Aleksib [T]"/>
 			<string key="weapon" value="Five-SeveN"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:13.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:47.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="Five-SeveN"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:12.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:48.000000+0100"/>
 			<string key="victim" value="FalleN [CT]"/>
 			<string key="weapon" value="Tec-9"/>
 			<boolean key="headshot" value="true"/>
@@ -1095,47 +1095,47 @@
 		<event>
 			<string key="concept:name" value="bomb_plant"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:45.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:15.000000+0100"/>
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="21"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="yuurih [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:00.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:01:00.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:00.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="yuurih [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:57.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:03.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:57.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:03.000000+0100"/>
 			<string key="victim" value="Aleksib [T]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="w0nderful [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:52.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:08.000000+0100"/>
 			<string key="victim" value="FalleN [CT]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
@@ -1144,57 +1144,57 @@
 	<trace>
 		<string key="concept:name" value="22"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="jL [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:39.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:21.000000+0100"/>
 			<string key="victim" value="KSCERATO [CT]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="yuurih [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:38.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:22.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="M4A1"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Skullz [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:35.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:25.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="Skullz [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:34.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:26.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Aleksib [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:33.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:27.000000+0100"/>
 			<string key="victim" value="yuurih [CT]"/>
 			<string key="weapon" value="MAC-10"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:33.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:27.000000+0100"/>
 			<string key="victim" value="Aleksib [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:28.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:32.000000+0100"/>
 			<string key="victim" value="w0nderful [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
@@ -1203,57 +1203,57 @@
 	<trace>
 		<string key="concept:name" value="23"/>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="Aleksib [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:51.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:09.000000+0100"/>
 			<string key="victim" value="KSCERATO [CT]"/>
 			<string key="weapon" value="Tec-9"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:51.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:09.000000+0100"/>
 			<string key="victim" value="w0nderful [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:49.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:11.000000+0100"/>
 			<string key="victim" value="Aleksib [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="chelo [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:48.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:12.000000+0100"/>
 			<string key="victim" value="b1t [T]"/>
 			<string key="weapon" value="AK-47"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[T] kills [CT]"/>
 			<string key="org:role" value="jL [T]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:40.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:20.000000+0100"/>
 			<string key="victim" value="Skullz [CT]"/>
 			<string key="weapon" value="Galil AR"/>
 			<boolean key="headshot" value="true"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:36.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:24.000000+0100"/>
 			<string key="victim" value="iM [T]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>
 		</event>
 		<event>
-			<string key="concept:name" value="kill"/>
+			<string key="concept:name" value="[CT] kills [T]"/>
 			<string key="org:role" value="FalleN [CT]"/>
-			<date key="time:timestamp" value="2024-10-28T00:00:13.000000+0100"/>
+			<date key="time:timestamp" value="2024-10-28T00:04:47.000000+0100"/>
 			<string key="victim" value="jL [T]"/>
 			<string key="weapon" value="AWP"/>
 			<boolean key="headshot" value="false"/>

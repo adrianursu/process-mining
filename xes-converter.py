@@ -17,8 +17,10 @@ def create_trace(round_number, events):
         SubElement(event_elem, "string", key="concept:name", value=event["type"])
         SubElement(event_elem, "string", key="org:role", value=event["player"])
         minutes,secs = event["time"].split(":")
-        dt = datetime.combine(date.today(), time(hour=0,minute=int(minutes), second=int(secs),tzinfo=datetime.now().astimezone().tzinfo))
+        dt = datetime.combine(date.today(), time(hour=0,minute=5,tzinfo=datetime.now().astimezone().tzinfo))
+        dt = dt - timedelta(minutes=int(minutes),seconds=int(secs))
         dt = dt.strftime("%Y-%m-%dT%H:%M:%S.%f%z")
+
         SubElement(event_elem, "date", key="time:timestamp", value=dt)
         if "victim" in event:
             SubElement(event_elem, "string", key="victim", value=event["victim"])
@@ -41,7 +43,7 @@ for round_info in rounds_data:
     if "kill_events" in round_info:
         for kill in round_info["kill_events"]:
             events.append({
-                "type": "kill",
+                "type": kill["killer"].split(" ")[-1]+" kills "+kill["victim"].split(" ")[-1],
                 "time": kill["time"],
                 "player": kill["killer"],
                 "victim": kill["victim"],
