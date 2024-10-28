@@ -76,7 +76,7 @@ func DurationToISO8601(d time.Duration) string {
 
 	result := "1970-01-01T"
 
-	result += fmt.Sprintf(":%02d", hours)
+	result += fmt.Sprintf("%02d", hours)
 
 	result += fmt.Sprintf(":%02d", minutes)
 
