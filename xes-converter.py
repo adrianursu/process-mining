@@ -13,13 +13,11 @@ def create_trace(round_number, events):
     trace_round = SubElement(trace, "string", key="concept:name", value=str(round_number))
 
     for event in events:
+        parsed = event["time"].replace("T:", "T")
         event_elem = SubElement(trace, "event")
         SubElement(event_elem, "string", key="concept:name", value=event["type"])
         SubElement(event_elem, "string", key="org:role", value=event["player"])
-        minutes,secs = event["time"].split(":")
-        dt = datetime.combine(date.today(), time(hour=0,minute=int(minutes), second=int(secs),tzinfo=datetime.now().astimezone().tzinfo))
-        dt = dt.strftime("%Y-%m-%dT%H:%M:%S.%f%z")
-        SubElement(event_elem, "date", key="time:timestamp", value=dt)
+        SubElement(event_elem, "date", key="time:timestamp", value=parsed)
         if "victim" in event:
             SubElement(event_elem, "string", key="victim", value=event["victim"])
         if "weapon" in event:
@@ -42,7 +40,7 @@ for round_info in rounds_data:
         for kill in round_info["kill_events"]:
             events.append({
                 "type": "kill",
-                "time": kill["time"],
+                "time": kill["timestamp"],
                 "player": kill["killer"],
                 "victim": kill["victim"],
                 "weapon": kill["weapon"],
@@ -54,7 +52,7 @@ for round_info in rounds_data:
         for bomb in round_info["bomb_events"]:
             events.append({
                 "type": f"bomb_{bomb['action']}",
-                "time": bomb["time"],
+                "time": bomb["timestamp"],
                 "player": bomb["player"]
             })
 
