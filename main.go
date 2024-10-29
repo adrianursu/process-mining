@@ -21,6 +21,7 @@ type ChangeLocationEvent struct {
 }
 
 var oldPlaceForPlayer = make(map[string]string)
+var roundStarted = false
 
 // KillEvent represents a kill event in the demo
 type KillEvent struct {
@@ -120,7 +121,7 @@ func getWeaponName(weapon *common.Equipment) string {
 }
 
 func main() {
-	f, err := os.Open("demos/natus-vincere-vs-mouz-m1-inferno.dem") // Replace with your actual demo file path
+	f, err := os.Open("faze-vs-natus-vincere-m1-dust2.dem") // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -141,10 +142,15 @@ func main() {
 	p.RegisterEventHandler(func(e events.RoundStart) {
 		roundNumber++
 		roundStartTime = p.CurrentTime() // Reset round start time to the current demo time
+		roundStarted = true
 		log.Printf("New round started at %s", roundStartTime.String())
 		isBombPlanted = false // Reset bomb planted state at the start of a new round
 
 		oldPlaceForPlayer = make(map[string]string)
+		players := p.GameState().Participants().Playing()
+		for _, player := range players {
+			oldPlaceForPlayer[getPlayerNameWithTeam(player)] = ""
+		}
 
 		currentRound = &RoundInfo{
 			RoundNumber: roundNumber,
@@ -184,38 +190,6 @@ func main() {
 				Headshot:    e.IsHeadshot,
 			}
 			currentRound.KillEvents = append(currentRound.KillEvents, killEvent)
-		}
-	})
-
-	// Register handler for player sound events
-	p.RegisterEventHandler(func(e events.PlayerSound) {
-		if currentRound != nil {
-			playerName := getPlayerNameWithTeam(e.Player)
-
-			oldPlace, exists := oldPlaceForPlayer[playerName]
-			if e.Player == nil {
-				return
-			}
-
-			newPlace := e.Player.LastPlaceName()
-			if !exists {
-				oldPlaceForPlayer[playerName] = e.Player.LastPlaceName()
-			} else {
-				if oldPlace == newPlace {
-					return
-				}
-			}
-
-			changeLocationEvent := ChangeLocationEvent{
-				Timestamp: DurationToISO8601(p.CurrentTime()),
-				Player:    playerName,
-				OldPlace:  oldPlace,
-				NewPlace:  newPlace,
-			}
-
-			oldPlaceForPlayer[playerName] = newPlace
-
-			currentRound.ChangeLocationEvents = append(currentRound.ChangeLocationEvents, changeLocationEvent)
 		}
 	})
 
@@ -274,6 +248,7 @@ func main() {
 	// Register handler for round end events to capture final scores
 	p.RegisterEventHandler(func(e events.RoundEnd) {
 		if currentRound != nil {
+			roundStarted = false
 			currentRound.EndTimestamp = DurationToISO8601(p.CurrentTime())
 
 			switch e.Reason {
@@ -483,6 +458,36 @@ func main() {
 
 			// Add weapon events to the current round
 			currentRound.WeaponEvents = weaponEvents
+		}
+	})
+
+	// Verify each frame if location of player has changed and update delta
+	p.RegisterEventHandler(func(e events.FrameDone) {
+		if roundStarted {
+			players := p.GameState().Participants().Playing()
+			for _, player := range players {
+				playerName := getPlayerNameWithTeam(player)
+				if player == nil || !player.IsAlive() {
+					continue
+				}
+
+				newPlace := player.LastPlaceName()
+				oldPlace := oldPlaceForPlayer[playerName]
+				if newPlace == oldPlace {
+					continue
+				}
+
+				changeLocationEvent := ChangeLocationEvent{
+					Timestamp: DurationToISO8601(p.CurrentTime()),
+					Player:    playerName,
+					OldPlace:  oldPlace,
+					NewPlace:  newPlace,
+				}
+
+				oldPlaceForPlayer[playerName] = newPlace
+
+				currentRound.ChangeLocationEvents = append(currentRound.ChangeLocationEvents, changeLocationEvent)
+			}
 		}
 	})
 
