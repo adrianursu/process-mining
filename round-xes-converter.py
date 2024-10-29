@@ -44,7 +44,7 @@ def json_log_to_xes(json_data):
             if "kill_events" in round_data and len(round_data["kill_events"]) > 0:    
                 for kill in round_data.get("kill_events", []):
                     event_attrs = {
-                        "concept:name": f"Kill-{kill["victim"]}",
+                        "concept:name": f"Kill {kill["victim"][-4:]}",
                         "time:timestamp": kill["timestamp"],
                         "org:role": kill["killer"],
                         "killer_place": kill["killer_place"],
@@ -84,7 +84,7 @@ def json_log_to_xes(json_data):
             start_timestamp = round_data["timestamp"]
             for weapon_event in round_data.get("weapon_events", []):
                 event_attrs = {
-                    "concept:name": f"Inventory-{weapon_event["player"]}",
+                    "concept:name": f"Inventory Check",
                     "time:timestamp": start_timestamp,
                     "org:role": weapon_event["player"],
                     "primary_weapon": weapon_event.get("primary", ""),
