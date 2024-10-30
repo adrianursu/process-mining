@@ -11,7 +11,12 @@ ZONE = "+00:00"
 def create_event_element(attributes):
     event_elem = ET.Element("event")
     for key, value in attributes.items():
-        ET.SubElement(event_elem, "string", key=key, value=str(value))
+        if key == "time:timestamp":
+            ET.SubElement(event_elem, "date", key=key, value=value)
+        elif key == "org:resource":
+            ET.SubElement(event_elem, "int", key=key, value=str(value))
+        else:
+            ET.SubElement(event_elem, "string", key=key, value=str(value))
     return event_elem
 
 def normalize_timestamp(timestamp: str, reference: str):
