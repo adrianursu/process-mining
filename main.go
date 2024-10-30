@@ -121,7 +121,7 @@ func getWeaponName(weapon *common.Equipment) string {
 }
 
 func main() {
-	f, err := os.Open("faze-vs-natus-vincere-m1-dust2.dem") // Replace with your actual demo file path
+	f, err := os.Open("demos/natus-vincere-vs-mouz-m1-inferno.dem") // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -446,6 +446,7 @@ func main() {
 
 				// Create a WeaponEvent for this player
 				weaponEvent := WeaponEvent{
+					Timestamp:  currentRound.Timestamp,
 					Player:     playerName,
 					Weapons:    weapons,
 					Primary:    primaryWeapon,
