@@ -425,14 +425,12 @@ func main() {
 				playerName := getPlayerNameWithTeam(player)
 
 				// List to store the weapons the player is holding
-				var weapons []string
 				var primaryWeapon string
 				var secondaryWeapon string
 				var otherEquip []string
 
 				// Loop through player's inventory and sort weapons into primary, secondary, and other equipment
 				for _, weapon := range player.Weapons() {
-					weapons = append(weapons, getWeaponName(weapon))
 
 					// Classify weapons: primary, secondary, or other (grenades, etc.)
 					switch weapon.Class() {
