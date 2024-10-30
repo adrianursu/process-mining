@@ -13,6 +13,17 @@ import (
 )
 
 // KillEvent represents a kill event in the demo
+type ChangeLocationEvent struct {
+	Timestamp string `json:"timestamp"`
+	Player    string `json:"player"`    // Player's name with team indicator
+	OldPlace  string `json:"old_place"` // Old map location of the player
+	NewPlace  string `json:"new_place"` // New map location of the player
+}
+
+var oldPlaceForPlayer = make(map[string]string)
+var roundStarted = false
+
+// KillEvent represents a kill event in the demo
 type KillEvent struct {
 	Timestamp   string `json:"timestamp"`
 	Killer      string `json:"killer"`       // Killer's name with team indicator
@@ -35,17 +46,18 @@ type BombEvent struct {
 
 // RoundInfo represents all events that happened in a specific round
 type RoundInfo struct {
-	RoundNumber   int            `json:"round_number"`
-	TScore        int            `json:"t_score"`  // Score of Terrorists
-	CTScore       int            `json:"ct_score"` // Score of Counter-Terrorists
-	Winner        string         `json:"winner"`
-	Timestamp     string         `json:"timestamp"`
-	EndTimestamp  string         `json:"end_timestamp"`
-	EndReason     string         `json:"end_reason"`
-	KillEvents    []KillEvent    `json:"kill_events"`
-	BombEvents    []BombEvent    `json:"bomb_events"`
-	GrenadeEvents []GrenadeEvent `json:"grenade_events"` // List of grenade events
-	WeaponEvents  []WeaponEvent  `json:"weapon_events"`  // Weapons after freezetime
+	RoundNumber          int                   `json:"round_number"`
+	TScore               int                   `json:"t_score"`  // Score of Terrorists
+	CTScore              int                   `json:"ct_score"` // Score of Counter-Terrorists
+	Winner               string                `json:"winner"`
+	Timestamp            string                `json:"timestamp"`
+	EndTimestamp         string                `json:"end_timestamp"`
+	EndReason            string                `json:"end_reason"`
+	KillEvents           []KillEvent           `json:"kill_events"`
+	ChangeLocationEvents []ChangeLocationEvent `json:"change_location_events"`
+	BombEvents           []BombEvent           `json:"bomb_events"`
+	GrenadeEvents        []GrenadeEvent        `json:"grenade_events"` // List of grenade events
+	WeaponEvents         []WeaponEvent         `json:"weapon_events"`  // Weapons after freezetime
 }
 
 type GrenadeEvent struct {
@@ -76,7 +88,7 @@ func DurationToISO8601(d time.Duration) string {
 
 	result := "1970-01-01T"
 
-	result += fmt.Sprintf(":%02d", hours)
+	result += fmt.Sprintf("%02d", hours)
 
 	result += fmt.Sprintf(":%02d", minutes)
 
@@ -130,8 +142,15 @@ func main() {
 	p.RegisterEventHandler(func(e events.RoundStart) {
 		roundNumber++
 		roundStartTime = p.CurrentTime() // Reset round start time to the current demo time
+		roundStarted = true
 		log.Printf("New round started at %s", roundStartTime.String())
 		isBombPlanted = false // Reset bomb planted state at the start of a new round
+
+		oldPlaceForPlayer = make(map[string]string)
+		players := p.GameState().Participants().Playing()
+		for _, player := range players {
+			oldPlaceForPlayer[getPlayerNameWithTeam(player)] = ""
+		}
 
 		currentRound = &RoundInfo{
 			RoundNumber: roundNumber,
@@ -229,6 +248,7 @@ func main() {
 	// Register handler for round end events to capture final scores
 	p.RegisterEventHandler(func(e events.RoundEnd) {
 		if currentRound != nil {
+			roundStarted = false
 			currentRound.EndTimestamp = DurationToISO8601(p.CurrentTime())
 
 			switch e.Reason {
@@ -432,13 +452,42 @@ func main() {
 					Secondary:  secondaryWeapon,
 					OtherEquip: otherEquip,
 					MoneyLeft:  moneyLeft,
-					Timestamp:  DurationToISO8601(p.CurrentTime()),
 				}
 				weaponEvents = append(weaponEvents, weaponEvent)
 			}
 
 			// Add weapon events to the current round
 			currentRound.WeaponEvents = weaponEvents
+		}
+	})
+
+	// Verify each frame if location of player has changed and update delta
+	p.RegisterEventHandler(func(e events.FrameDone) {
+		if roundStarted {
+			players := p.GameState().Participants().Playing()
+			for _, player := range players {
+				playerName := getPlayerNameWithTeam(player)
+				if player == nil || !player.IsAlive() {
+					continue
+				}
+
+				newPlace := player.LastPlaceName()
+				oldPlace := oldPlaceForPlayer[playerName]
+				if newPlace == oldPlace {
+					continue
+				}
+
+				changeLocationEvent := ChangeLocationEvent{
+					Timestamp: DurationToISO8601(p.CurrentTime()),
+					Player:    playerName,
+					OldPlace:  oldPlace,
+					NewPlace:  newPlace,
+				}
+
+				oldPlaceForPlayer[playerName] = newPlace
+
+				currentRound.ChangeLocationEvents = append(currentRound.ChangeLocationEvents, changeLocationEvent)
+			}
 		}
 	})
 
