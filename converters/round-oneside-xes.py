@@ -20,12 +20,12 @@ def create_event_element(attributes):
     return event_elem
 
 def normalize_timestamp(timestamp: str, reference: str):
-    dt = datetime.strptime(timestamp, TIME_FORMAT)
-    ref = datetime.strptime(reference, TIME_FORMAT)
+    dt = datetime.fromisoformat(timestamp)
+    ref = datetime.fromisoformat(reference)
      
     diff = dt - ref
     
-    new = datetime.min + diff
+    new = datetime(1970, 1, 1, 0, 0, 0) + diff
     
     return new.strftime(TIME_FORMAT)[:-3] + ZONE
 
@@ -133,7 +133,15 @@ def json_log_to_xes(json_data):
                 }
                 events.append((event_attrs["time:timestamp"], event_attrs))
                 
+            # Finalize the trace with a round end event with the available details
+            round_end_event = {
+                "concept:name": "Round End" + "(Win)" if round_data["winner"] == "T" else "(Lose)",
+                "time:timestamp": normalize_timestamp(round_data["end_timestamp"], round_time),
+                "winner": round_data["winner"],
+                "reason": round_data["end_reason"]
+            }
             
+            events.append((round_end_event["time:timestamp"], round_end_event))
 
             # Sort events by timestamp and append to trace
             events.sort(key=lambda x: x[0])  # Sort by timestamp
