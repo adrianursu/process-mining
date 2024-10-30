@@ -57,7 +57,7 @@ type RoundInfo struct {
 	ChangeLocationEvents []ChangeLocationEvent `json:"change_location_events"`
 	BombEvents           []BombEvent           `json:"bomb_events"`
 	GrenadeEvents        []GrenadeEvent        `json:"grenade_events"` // List of grenade events
-	WeaponEvents         []WeaponEvent         `json:"weapon_events"`  // Weapons after freezetime
+	WeaponEvents         []WeaponEvent         `json:"inventory_checking"`  // Weapons after freezetime
 }
 
 type GrenadeEvent struct {
@@ -72,7 +72,6 @@ type GrenadeEvent struct {
 type WeaponEvent struct {
 	Timestamp  string   `json:"timestamp"`
 	Player     string   `json:"player"`      // Player's name with team indicator
-	Weapons    []string `json:"weapons"`     // List of weapons the player is holding
 	Primary    string   `json:"primary"`     // Primary weapon (if available)
 	Secondary  string   `json:"secondary"`   // Secondary weapon (if available)
 	OtherEquip []string `json:"other_equip"` // Other equipment (grenades, etc.)
@@ -121,7 +120,7 @@ func getWeaponName(weapon *common.Equipment) string {
 }
 
 func main() {
-	f, err := os.Open("faze-vs-natus-vincere-m1-dust2.dem") // Replace with your actual demo file path
+	f, err := os.Open("faze-navi.dem") // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -447,7 +446,6 @@ func main() {
 				// Create a WeaponEvent for this player
 				weaponEvent := WeaponEvent{
 					Player:     playerName,
-					Weapons:    weapons,
 					Primary:    primaryWeapon,
 					Secondary:  secondaryWeapon,
 					OtherEquip: otherEquip,
