@@ -159,7 +159,7 @@ def json_log_to_xes(json_data):
     return ET.tostring(root, xml_declaration=True, encoding="UTF-8")
 
 # Load the JSON data
-with open("rounds_data.json") as f:
+with open("demo_data.json") as f:
     json_data = json.load(f)
 
 # Convert JSON to XES format and pretty-print the XML DOM
