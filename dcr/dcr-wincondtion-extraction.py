@@ -1,23 +1,25 @@
 import json
-from xml.etree.ElementTree import Element, SubElement, tostring, ElementTree
+from xml.etree.ElementTree import Element, SubElement, tostring
 import xml.dom.minidom
-from datetime import date, datetime, time, timedelta, timezone
+
+import utils
 
 # Load JSON file
-with open("rounds_data.json") as f:
+with open("../rounds_data.json") as f:
     rounds_data = json.load(f)
 
 # Helper function to create XES elements
 def create_trace(round_number, events):
     trace = Element("trace")
     trace_round = SubElement(trace, "string", key="concept:name", value=str(round_number))
-
+    win_condition = None
     for event in events:
         parsed = event["time"].replace("T:", "T")
         event_elem = SubElement(trace, "event")
         SubElement(event_elem, "string", key="concept:name", value=event["type"])
         SubElement(event_elem, "string", key="org:role", value=event["player"])
-
+        if event["type"].startswith("Win"):
+            win_condition = event["type"]
         SubElement(event_elem, "date", key="time:timestamp", value=parsed)
         if "victim" in event:
             SubElement(event_elem, "string", key="victim", value=event["victim"])
@@ -26,10 +28,15 @@ def create_trace(round_number, events):
         if "headshot" in event:
             SubElement(event_elem, "boolean", key="headshot", value=str(event["headshot"]).lower())
 
-    return trace
+    return trace, win_condition
 
 # Create XES root element
-xes_log = Element("log", {"xes.version": "1.0", "xes.features": "", "openxes.version": "1.0RC7", "xmlns": "http://www.xes-standard.org/"})
+t_elim = Element("log", {"xes.version": "1.0", "xes.features": "", "openxes.version": "1.0RC7", "xmlns": "http://www.xes-standard.org/"})
+ct_elim = Element("log", {"xes.version": "1.0", "xes.features": "", "openxes.version": "1.0RC7", "xmlns": "http://www.xes-standard.org/"})
+time_out = Element("log", {"xes.version": "1.0", "xes.features": "", "openxes.version": "1.0RC7", "xmlns": "http://www.xes-standard.org/"})
+expl = Element("log", {"xes.version": "1.0", "xes.features": "", "openxes.version": "1.0RC7", "xmlns": "http://www.xes-standard.org/"})
+defuse = Element("log", {"xes.version": "1.0", "xes.features": "", "openxes.version": "1.0RC7", "xmlns": "http://www.xes-standard.org/"})
+
 
 # Convert rounds to XES traces
 for round_info in rounds_data:
@@ -51,7 +58,7 @@ for round_info in rounds_data:
                 events.append({
                     "type": kill["killer"].split(" ")[-1]+" kills "+kill["victim"].split(" ")[-1],
                     "time": kill["timestamp"],
-                    "player": kill["killer"].split(" ")[-1],
+                    "player": utils.get_weapon_type(kill["weapon"]),
                     "victim": kill["killer"].split(" ")[-1],
                     "weapon": kill["weapon"],
                     "headshot": kill["headshot"]
@@ -74,7 +81,13 @@ for round_info in rounds_data:
                 "player": buy["player"].split(" ")[-1],
                 "weapon": buy["weapons"]
             })
-
+    if "change_location_events" in round_info and round_info["change_location_events"]:
+        for location_change in round_info["change_location_events"]:
+            events.append({
+                "type": f"to {location_change['new_place']}",
+                "time": location_change["timestamp"],
+                "player": location_change["player"].split(" ")[-1],
+            })
     # Process bomb events
     if "bomb_events" in round_info and round_info["bomb_events"]:
         for bomb in round_info["bomb_events"]:
@@ -89,14 +102,26 @@ for round_info in rounds_data:
         "player": round_info["winner"],
     })
     # Add trace to log
-    trace = create_trace(round_number, events)
-    xes_log.append(trace)
+    trace, win_c = create_trace(round_number, events)
+    if win_c == "Win condition BombDefused":
+        defuse.append(trace)
+    if win_c == "Win condition CTEliminated":
+        ct_elim.append(trace)
+    if win_c == "Win condition BombExploded":
+        expl.append(trace)
+    if win_c == "Win condition TimeExpired":
+        time_out.append(trace)
+    if win_c == "Win condition TEliminated":
+        t_elim.append(trace)
 
 # Save XES log to file
-dom = xml.dom.minidom.parseString(tostring(xes_log))
-pretty_xml_as_string = dom.toprettyxml()
 
-with open("rounds_data.xes", "w") as xes_file:
-    xes_file.write(pretty_xml_as_string)
+traces = {"def": defuse,"ct_elim": ct_elim,"expl": expl,"t_elim": t_elim, "time_out": time_out}
+for name, t in traces.items():
+    dom = xml.dom.minidom.parseString(tostring(t))
+    pretty_xml_as_string = dom.toprettyxml()
+
+    with open(f"{name}.xes", "w") as xes_file:
+        xes_file.write(pretty_xml_as_string)
 
 print("Conversion to XES completed. Saved as 'rounds_data.xes'.")
