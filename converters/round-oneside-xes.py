@@ -57,7 +57,7 @@ def json_log_to_xes(json_data):
 
             # Consolidate all events and sort by timestamp
             events = []
-            filter_out_team = "[CT]"
+            filter_out_team = "[T]"
             
             # Add kill events
             if "kill_events" in round_data and len(round_data["kill_events"]) > 0:    
@@ -134,8 +134,13 @@ def json_log_to_xes(json_data):
                 events.append((event_attrs["time:timestamp"], event_attrs))
                 
             # Finalize the trace with a round end event with the available details
+            if round_data["winner"] == "CT":
+                round_won = "(Win)"
+            else:
+                round_won = "(Lose)"
+            
             round_end_event = {
-                "concept:name": "Round End" + "(Win)" if round_data["winner"] == "T" else "(Lose)",
+                "concept:name": "Round End -" + round_won,
                 "time:timestamp": normalize_timestamp(round_data["end_timestamp"], round_time),
                 "winner": round_data["winner"],
                 "reason": round_data["end_reason"]
@@ -162,5 +167,5 @@ xes_output = json_log_to_xes(json_data)
 xmlstr = minidom.parseString(xes_output).toprettyxml(indent="   ")
 
 # Save to XES file
-with open("game_round_log.xes", "wb") as f:
+with open("ctside-round-logs.xes", "wb") as f:
     f.write(xmlstr.encode("utf-8"))
