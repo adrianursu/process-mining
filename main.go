@@ -56,8 +56,8 @@ type RoundInfo struct {
 	KillEvents           []KillEvent           `json:"kill_events"`
 	ChangeLocationEvents []ChangeLocationEvent `json:"change_location_events"`
 	BombEvents           []BombEvent           `json:"bomb_events"`
-	GrenadeEvents        []GrenadeEvent        `json:"grenade_events"` // List of grenade events
-	WeaponEvents         []WeaponEvent         `json:"inventory_checking"`  // Weapons after freezetime
+	GrenadeEvents        []GrenadeEvent        `json:"grenade_events"`     // List of grenade events
+	WeaponEvents         []WeaponEvent         `json:"inventory_checking"` // Weapons after freezetime
 }
 
 type GrenadeEvent struct {
@@ -93,7 +93,7 @@ func DurationToISO8601(d time.Duration) string {
 
 	result += fmt.Sprintf(":%02d", seconds)
 
-	result += fmt.Sprintf(".%03d+00:00", milliseconds)
+	result += fmt.Sprintf(".%03d", milliseconds)
 
 	return result
 }
@@ -323,6 +323,7 @@ func main() {
 				Player:    playerName,
 				PlayerPos: playerPos,
 				Place:     place,
+				Type:      "deployed",
 				Grenade:   "Flashbang",
 			}
 			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
@@ -362,6 +363,11 @@ func main() {
 			playerPos := [3]float32{}
 			place := ""
 			playerName := ""
+
+			if e.Projectile.WeaponInstance.String() != "Molotov" && e.Projectile.WeaponInstance.String() != "Incendiary Grenade" {
+				return
+			}
+
 			if e.Projectile.Thrower != nil {
 				playerName = getPlayerNameWithTeam(e.Projectile.Thrower)
 				place = e.Projectile.Thrower.LastPlaceName()
@@ -377,7 +383,7 @@ func main() {
 				Player:    playerName,
 				PlayerPos: playerPos,
 				Place:     place,
-				Grenade:   "Molotov",
+				Grenade:   e.Projectile.WeaponInstance.String(),
 			}
 			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
 		}
