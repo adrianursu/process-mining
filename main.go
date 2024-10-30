@@ -323,7 +323,6 @@ func main() {
 				Player:    playerName,
 				PlayerPos: playerPos,
 				Place:     place,
-				Type:      "deployed",
 				Grenade:   "Flashbang",
 			}
 			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
