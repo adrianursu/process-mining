@@ -2,7 +2,7 @@ import json
 from xml.etree.ElementTree import Element, SubElement, tostring
 import xml.dom.minidom
 
-import utils
+from dcr import utils
 
 # Load JSON file
 with open("../rounds_data.json") as f:

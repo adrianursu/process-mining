@@ -121,7 +121,7 @@ for name, t in traces.items():
     dom = xml.dom.minidom.parseString(tostring(t))
     pretty_xml_as_string = dom.toprettyxml()
 
-    with open(f"{name}.xes", "w") as xes_file:
+    with open(f"xes_files/{name}.xes", "w") as xes_file:
         xes_file.write(pretty_xml_as_string)
 
 print("Conversion to XES completed. Saved as 'rounds_data.xes'.")
