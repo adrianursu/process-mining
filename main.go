@@ -120,7 +120,7 @@ func getWeaponName(weapon *common.Equipment) string {
 }
 
 func main() {
-	f, err := os.Open("demos/natus-vincere-vs-mouz-m1-inferno.dem") // Replace with your actual demo file path
+	f, err := os.Open("navi-mouz.dem") // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -140,9 +140,10 @@ func main() {
 	// Register handler for the start of a round
 	p.RegisterEventHandler(func(e events.RoundStart) {
 		roundNumber++
-		roundStartTime = p.CurrentTime() // Reset round start time to the current demo time
+		// roundStartTime = p.CurrentTime() // Reset round start time to the current demo time
 		roundStarted = true
 		log.Printf("New round started at %s", roundStartTime.String())
+
 		isBombPlanted = false // Reset bomb planted state at the start of a new round
 
 		oldPlaceForPlayer = make(map[string]string)
@@ -418,6 +419,9 @@ func main() {
 	// Register handler for when freezetime ends
 	p.RegisterEventHandler(func(e events.RoundFreezetimeEnd) {
 		if currentRound != nil {
+			roundStartTime = p.CurrentTime()
+			currentRound.Timestamp = DurationToISO8601(roundStartTime)
+
 			weaponEvents := []WeaponEvent{}
 
 			// Get all players from both teams (T and CT)
