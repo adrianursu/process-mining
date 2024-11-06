@@ -64,7 +64,7 @@ def json_log_to_xes(json_data):
                 for kill in round_data.get("kill_events", []):
                     if filter_out_team in kill["killer"]:
                         event_attrs = {
-                            "concept:name": f"Dead-{kill["victim"]}",
+                            "concept:name": f"Death-{kill["victim"]}",
                             "concept:name": f"Kill {kill["victim"]}",
                             "time:timestamp": normalize_timestamp(kill["timestamp"], round_time),
                             "org:role": kill["victim"],
@@ -76,7 +76,7 @@ def json_log_to_xes(json_data):
                         }
                         continue
                     event_attrs = {
-                        "concept:name": f"Kill {kill["victim"]}",
+                        "concept:name": f"Kill-in-{kill["victim_place"]}",
                         "time:timestamp": normalize_timestamp(kill["timestamp"], round_time),
                         "org:role": kill["killer"],
                         "killer_place": kill["killer_place"],
