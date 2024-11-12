@@ -36,6 +36,7 @@ def json_log_to_xes(json_data):
     root = ET.Element("log", xmlns=xes_ns)
     ET.SubElement(root, "string", key="concept:name", value="round-based-cs-game")
     
+    match_no = 0
     
     with alive_bar(len(json_data), bar="bubbles", spinner="dots", title="Convert JSON to XES", 
                    length=60, max_cols=130, force_tty=True) as bar:
@@ -44,8 +45,14 @@ def json_log_to_xes(json_data):
             trace = ET.SubElement(root, "trace")
             round_time = round_data["timestamp"]
             
+            if round_data["round_number"] == 1:
+                match_no += 1
+                
+            if round_data["kill_events"] == None:
+                continue
+            
             # Define the general attributes for the round
-            ET.SubElement(trace, "string", key="concept:name", value=f"round-{round_data['round_number']}")
+            ET.SubElement(trace, "string", key="concept:name", value=f"round-{round_data['round_number']}-{match_no}")
             ET.SubElement(trace, "string", key="winner", value=round_data["winner"])
             ET.SubElement(trace, "string", key="end_reason", value=round_data["end_reason"])
             ET.SubElement(trace, "int", key="t_score", value=str(round_data["t_score"]))
@@ -59,8 +66,9 @@ def json_log_to_xes(json_data):
             events = []
             filter_out_team = "[T]"
             
+            
             # Add kill events
-            if "kill_events" in round_data and len(round_data["kill_events"]) > 0:    
+            if round_data["kill_events"] and len(round_data["kill_events"]) > 0:    
                 for kill in round_data.get("kill_events", []):
                     if filter_out_team in kill["killer"]:
                         event_attrs = {
@@ -170,7 +178,7 @@ def json_log_to_xes(json_data):
     return ET.tostring(root, xml_declaration=True, encoding="UTF-8")
 
 # Load the JSON data
-with open("demo_data.json") as f:
+with open("faze_demo_data.json") as f:
     json_data = json.load(f)
 
 # Convert JSON to XES format and pretty-print the XML DOM
@@ -178,5 +186,5 @@ xes_output = json_log_to_xes(json_data)
 xmlstr = minidom.parseString(xes_output).toprettyxml(indent="   ")
 
 # Save to XES file
-with open("ctside-round-logs.xes", "wb") as f:
+with open("faze-ctside-round-logs.xes", "wb") as f:
     f.write(xmlstr.encode("utf-8"))

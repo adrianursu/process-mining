@@ -119,8 +119,34 @@ func getWeaponName(weapon *common.Equipment) string {
 	return "Unknown"
 }
 
+// var navi_demos = [...]string{
+// 	"g2-vs-navi-m4-inferno.dem",
+// 	"navi-vs-faze-m1-inferno-p1.dem",
+// 	"navi-vs-faze-m1-inferno-p2.dem",
+// 	"navi-vs-faze-m1-inferno.dem",
+// 	"navi-vs-liquid-m1-inferno.dem",
+// 	"navi-vs-mouz-m1-inferno.dem",
+// 	"vpro-vs-navi-m1-inferno.dem",
+// }
+
+var faze_demos = [...]string{
+	"faze-vs-liquid-m1-inferno.dem",
+	"faze-vs-liquid-m1-inferno-1.dem",
+	"mouz-vs-faze-m1-inferno.dem",
+	"navi-vs-faze-m1-inferno-p1.dem",
+	"navi-vs-faze-m1-inferno-p2.dem",
+	"navi-vs-faze-m1-inferno.dem",
+}
+
 func main() {
-	f, err := os.Open("demos/natus-vincere-vs-mouz-m1-inferno.dem") // Replace with your actual demo file path
+	for index, demo := range faze_demos {
+		analyzeDemo(demo)
+		fmt.Printf("Demo %d: %s\n", index+1, demo)
+	}
+}
+
+func analyzeDemo(demoFile string) {
+	f, err := os.Open("demos/" + demoFile) // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -142,7 +168,7 @@ func main() {
 		roundNumber++
 		roundStartTime = p.CurrentTime() // Reset round start time to the current demo time
 		roundStarted = true
-		log.Printf("New round started at %s", roundStartTime.String())
+		// log.Printf("New round started at %s", roundStartTime.String())
 		isBombPlanted = false // Reset bomb planted state at the start of a new round
 
 		oldPlaceForPlayer = make(map[string]string)
@@ -506,10 +532,15 @@ func main() {
 	}
 
 	// Output the JSON to a file
-	err = os.WriteFile("rounds_data.json", jsonData, 0644)
+	var out_file, err_c = os.OpenFile("faze_demo_data.json", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err_c != nil {
+		log.Fatal(err_c)
+	}
+	_, err = out_file.Write(jsonData)
+	// err = os.WriteFile("rounds_data.json", jsonData, 0644)
 	if err != nil {
 		log.Panic("failed to write rounds data to file: ", err)
 	}
 
-	fmt.Println("Round data exported to rounds_data.json")
+	fmt.Println("Round data exported to faze_demo_data.json")
 }
