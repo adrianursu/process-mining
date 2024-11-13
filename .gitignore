@@ -7,3 +7,13 @@ go.sum
 **.xes
 *.dem
 *.json
+dcr-graphs/amount.xml
+dcr-graphs/amount1.xml
+dcr-graphs/Buying_at_1000_amount.png
+dcr-graphs/dcr-graph-XML-format.xml
+dcr-graphs/interaction.xml
+dcr-graphs/path.xml
+dcr-graphs/plantResponse.png
+dcr-graphs/plantResponse.xml
+dcr-graphs/plantResponse2.xml
+.gitignore
