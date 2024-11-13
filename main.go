@@ -119,33 +119,55 @@ func getWeaponName(weapon *common.Equipment) string {
 	return "Unknown"
 }
 
-// var navi_demos = [...]string{
-// 	"g2-vs-navi-m4-inferno.dem",
-// 	"navi-vs-faze-m1-inferno-p1.dem",
-// 	"navi-vs-faze-m1-inferno-p2.dem",
-// 	"navi-vs-faze-m1-inferno.dem",
-// 	"navi-vs-liquid-m1-inferno.dem",
-// 	"navi-vs-mouz-m1-inferno.dem",
-// 	"vpro-vs-navi-m1-inferno.dem",
-// }
-
-var faze_demos = [...]string{
-	"faze-vs-liquid-m1-inferno.dem",
-	"faze-vs-liquid-m1-inferno-1.dem",
-	"mouz-vs-faze-m1-inferno.dem",
+var navi_demos = [...]string{
+	"g2-vs-navi-m4-inferno.dem",
 	"navi-vs-faze-m1-inferno-p1.dem",
 	"navi-vs-faze-m1-inferno-p2.dem",
 	"navi-vs-faze-m1-inferno.dem",
+	"navi-vs-liquid-m1-inferno.dem",
+	"navi-vs-mouz-m1-inferno.dem",
+	"vpro-vs-navi-m1-inferno.dem",
 }
+
+// var faze_demos = [...]string{
+// 	"faze-vs-liquid-m1-inferno.dem",
+// 	"faze-vs-liquid-m1-inferno-1.dem",
+// 	"mouz-vs-faze-m1-inferno.dem",
+// 	"navi-vs-faze-m1-inferno-p1.dem",
+// 	"navi-vs-faze-m1-inferno-p2.dem",
+// 	"navi-vs-faze-m1-inferno.dem",
+// }
 
 func main() {
-	for index, demo := range faze_demos {
-		analyzeDemo(demo)
+	var round_data []*RoundInfo
+
+	for index, demo := range navi_demos {
+		round_data = append(round_data, analyzeDemo(demo)...)
 		fmt.Printf("Demo %d: %s\n", index+1, demo)
 	}
+
+	// Convert all rounds and their events to JSON
+	jsonData, err := json.MarshalIndent(round_data, "", "  ")
+	if err != nil {
+		log.Panic("failed to marshal rounds to JSON: ", err)
+	}
+
+	// Output the JSON to a file
+	var out_file, err_c = os.OpenFile("navi_demo_data.json", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err_c != nil {
+		log.Fatal(err_c)
+	}
+	_, err = out_file.Write(jsonData)
+	// err = os.WriteFile("rounds_data.json", jsonData, 0644)
+	if err != nil {
+		log.Panic("failed to write rounds data to file: ", err)
+	}
+
+	fmt.Println("Round data exported to faze_demo_data.json")
 }
 
-func analyzeDemo(demoFile string) {
+func analyzeDemo(demoFile string) []*RoundInfo {
+
 	f, err := os.Open("demos/" + demoFile) // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
@@ -525,22 +547,5 @@ func analyzeDemo(demoFile string) {
 		log.Panic("failed to parse demo: ", err)
 	}
 
-	// Convert all rounds and their events to JSON
-	jsonData, err := json.MarshalIndent(rounds, "", "  ")
-	if err != nil {
-		log.Panic("failed to marshal rounds to JSON: ", err)
-	}
-
-	// Output the JSON to a file
-	var out_file, err_c = os.OpenFile("faze_demo_data.json", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-	if err_c != nil {
-		log.Fatal(err_c)
-	}
-	_, err = out_file.Write(jsonData)
-	// err = os.WriteFile("rounds_data.json", jsonData, 0644)
-	if err != nil {
-		log.Panic("failed to write rounds data to file: ", err)
-	}
-
-	fmt.Println("Round data exported to faze_demo_data.json")
+	return rounds
 }
