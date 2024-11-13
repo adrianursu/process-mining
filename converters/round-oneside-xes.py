@@ -73,7 +73,6 @@ def json_log_to_xes(json_data):
                     if filter_out_team in kill["killer"]:
                         event_attrs = {
                             "concept:name": f"Death-{kill["victim"]}",
-                            "concept:name": f"Kill {kill["victim"]}",
                             "time:timestamp": normalize_timestamp(kill["timestamp"], round_time),
                             "org:role": kill["victim"],
                             "killer_place": kill["killer_place"],
@@ -82,6 +81,7 @@ def json_log_to_xes(json_data):
                             "weapon": kill["weapon"],
                             "headshot": str(kill["headshot"]),
                         }
+                        events.append((event_attrs["time:timestamp"], event_attrs))
                         continue
                     event_attrs = {
                         "concept:name": f"Kill-in-{kill["victim_place"]}",
@@ -178,7 +178,7 @@ def json_log_to_xes(json_data):
     return ET.tostring(root, xml_declaration=True, encoding="UTF-8")
 
 # Load the JSON data
-with open("faze_demo_data.json") as f:
+with open("navi_demo_data.json") as f:
     json_data = json.load(f)
 
 # Convert JSON to XES format and pretty-print the XML DOM
@@ -186,5 +186,5 @@ xes_output = json_log_to_xes(json_data)
 xmlstr = minidom.parseString(xes_output).toprettyxml(indent="   ")
 
 # Save to XES file
-with open("faze-ctside-round-logs.xes", "wb") as f:
+with open("navi-ctside-round-logs.xes", "wb") as f:
     f.write(xmlstr.encode("utf-8"))
