@@ -129,7 +129,13 @@ func getWeaponName(weapon *common.Equipment) string {
 }
 
 var navi_demos = [...]string{
-	"faze-vs-saw-m2-inferno.dem",
+	"g2-vs-navi-m4-inferno.dem",
+	"navi-vs-faze-m1-inferno-p1.dem",
+	"navi-vs-faze-m1-inferno-p2.dem",
+	"navi-vs-faze-m1-inferno.dem",
+	"navi-vs-liquid-m1-inferno.dem",
+	"navi-vs-mouz-m1-inferno.dem",
+	"vpro-vs-navi-m1-inferno.dem",
 }
 
 // var faze_demos = [...]string{
@@ -145,7 +151,7 @@ func main() {
 	var round_data []*RoundInfo
 
 	for index, demo := range navi_demos {
-		round_data = append(round_data, analyzeDemo(demo)...)
+		round_data = append(round_data, analyzeDemo("demos/"+demo)...)
 		fmt.Printf("Demo %d: %s\n", index+1, demo)
 	}
 
@@ -467,15 +473,17 @@ func analyzeDemo(demoFile string) []*RoundInfo {
 	})
 
 	p.RegisterEventHandler(func(e events.PlayerHurt) {
-		if e.Player != nil && e.Attacker != nil {
-			if e.HealthDamage+e.ArmorDamage > 35 && e.Weapon.Type != common.EqUnknown {
-				damageEvent := DamageEvent{
-					Timestamp:   DurationToISO8601(p.CurrentTime()),
-					Attacker:    getPlayerNameWithTeam(e.Attacker),
-					Weapon:      e.Weapon.String(),
-					TotalDamage: e.HealthDamage + e.ArmorDamage,
+		if currentRound != nil {
+			if e.Player != nil && e.Attacker != nil && e.Weapon != nil {
+				if e.HealthDamage+e.ArmorDamage > 40 && e.Weapon.Type != common.EqUnknown {
+					damageEvent := DamageEvent{
+						Timestamp:   DurationToISO8601(p.CurrentTime()),
+						Attacker:    getPlayerNameWithTeam(e.Attacker),
+						Weapon:      e.Weapon.String(),
+						TotalDamage: e.HealthDamage + e.ArmorDamage,
+					}
+					currentRound.DamageEvents = append(currentRound.DamageEvents, damageEvent)
 				}
-				currentRound.DamageEvents = append(currentRound.DamageEvents, damageEvent)
 			}
 		}
 	})
