@@ -74,7 +74,7 @@ def json_log_to_xes(json_data):
                         event_attrs = {
                             "concept:name": f"Death-{kill["victim"]}",
                             "time:timestamp": normalize_timestamp(kill["timestamp"], round_time),
-                            "org:role": kill["victim"],
+                            "org:resource": kill["victim"],
                             "killer_place": kill["killer_place"],
                             "killer": kill["killer"],
                             "victim_place": kill["victim_place"],
@@ -86,7 +86,7 @@ def json_log_to_xes(json_data):
                     event_attrs = {
                         "concept:name": f"Kill-in-{kill["victim_place"]}",
                         "time:timestamp": normalize_timestamp(kill["timestamp"], round_time),
-                        "org:role": kill["killer"],
+                        "org:resource": kill["killer"],
                         "killer_place": kill["killer_place"],
                         "victim": kill["victim"],
                         "victim_place": kill["victim_place"],
@@ -118,7 +118,7 @@ def json_log_to_xes(json_data):
                     event_attrs = {
                         "concept:name": f"Throw-{grenade_event["grenade"]}-{grenade_event["place"]}",
                         "time:timestamp": normalize_timestamp(grenade_event["timestamp"], round_time),
-                        "org:role": grenade_event["player"],
+                        "org:resource": grenade_event["player"],
                         "player_place": grenade_event["place"],
                         "grenade_type": grenade_event["grenade"],
                     }
@@ -132,7 +132,7 @@ def json_log_to_xes(json_data):
                 event_attrs = {
                     "concept:name": f"Inventory Check",
                     "time:timestamp": normalize_timestamp(round_time, round_time),
-                    "org:role": weapon_event["player"],
+                    "org:resource": weapon_event["player"],
                     "primary_weapon": weapon_event.get("primary", ""),
                     "secondary_weapon": weapon_event["secondary"],
                     "other_equip": ", ".join(weapon_event["other_equip"]),
@@ -147,7 +147,7 @@ def json_log_to_xes(json_data):
                 event_attrs = {
                     "concept:name": f"{location_event["player"]} in {location_event["new_place"]}",
                     "time:timestamp": normalize_timestamp(location_event["timestamp"], round_time),
-                    "org:role": location_event["player"],
+                    "org:resource": location_event["player"],
                     "old_location": location_event["old_place"],
                 }
                 events.append((event_attrs["time:timestamp"], event_attrs))
