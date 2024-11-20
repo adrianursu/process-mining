@@ -44,6 +44,14 @@ type BombEvent struct {
 	Success   bool       `json:"success"`         // Was the action successful?
 }
 
+// BombEvent represents a bomb-related event (plant or defuse)
+type DamageEvent struct {
+	Timestamp   string `json:"timestamp"`
+	Attacker    string `json:"attacker"`  // Player's name with team indicator
+	Weapon      string `json:"weapon"`    // Weapon
+	TotalDamage int    `json:"total_dmg"` // Weapon
+}
+
 // RoundInfo represents all events that happened in a specific round
 type RoundInfo struct {
 	RoundNumber          int                   `json:"round_number"`
@@ -58,6 +66,7 @@ type RoundInfo struct {
 	BombEvents           []BombEvent           `json:"bomb_events"`
 	GrenadeEvents        []GrenadeEvent        `json:"grenade_events"`     // List of grenade events
 	WeaponEvents         []WeaponEvent         `json:"inventory_checking"` // Weapons after freezetime
+	DamageEvents         []DamageEvent         `json:"damage_events"`      // Damage events
 }
 
 type GrenadeEvent struct {
@@ -120,13 +129,7 @@ func getWeaponName(weapon *common.Equipment) string {
 }
 
 var navi_demos = [...]string{
-	"g2-vs-navi-m4-inferno.dem",
-	"navi-vs-faze-m1-inferno-p1.dem",
-	"navi-vs-faze-m1-inferno-p2.dem",
-	"navi-vs-faze-m1-inferno.dem",
-	"navi-vs-liquid-m1-inferno.dem",
-	"navi-vs-mouz-m1-inferno.dem",
-	"vpro-vs-navi-m1-inferno.dem",
+	"faze-vs-saw-m2-inferno.dem",
 }
 
 // var faze_demos = [...]string{
@@ -153,7 +156,7 @@ func main() {
 	}
 
 	// Output the JSON to a file
-	var out_file, err_c = os.OpenFile("navi_demo_data.json", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	var out_file, err_c = os.OpenFile("faze_demo_data.json", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err_c != nil {
 		log.Fatal(err_c)
 	}
@@ -168,7 +171,7 @@ func main() {
 
 func analyzeDemo(demoFile string) []*RoundInfo {
 
-	f, err := os.Open("demos/" + demoFile) // Replace with your actual demo file path
+	f, err := os.Open(demoFile) // Replace with your actual demo file path
 	if err != nil {
 		log.Panic("failed to open demo file: ", err)
 	}
@@ -460,6 +463,20 @@ func analyzeDemo(demoFile string) []*RoundInfo {
 				Grenade:   "Decoy",
 			}
 			currentRound.GrenadeEvents = append(currentRound.GrenadeEvents, grenadeEvent)
+		}
+	})
+
+	p.RegisterEventHandler(func(e events.PlayerHurt) {
+		if e.Player != nil && e.Attacker != nil {
+			if e.HealthDamage+e.ArmorDamage > 35 && e.Weapon.Type != common.EqUnknown {
+				damageEvent := DamageEvent{
+					Timestamp:   DurationToISO8601(p.CurrentTime()),
+					Attacker:    getPlayerNameWithTeam(e.Attacker),
+					Weapon:      e.Weapon.String(),
+					TotalDamage: e.HealthDamage + e.ArmorDamage,
+				}
+				currentRound.DamageEvents = append(currentRound.DamageEvents, damageEvent)
+			}
 		}
 	})
 
