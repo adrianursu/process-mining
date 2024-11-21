@@ -13,7 +13,7 @@ def create_event_element(attributes):
     for key, value in attributes.items():
         if key == "time:timestamp":
             ET.SubElement(event_elem, "date", key=key, value=value)
-        elif key == "money":
+        elif key == "money" or key == "total_dmg":
             ET.SubElement(event_elem, "int", key=key, value=str(value))
         else:
             ET.SubElement(event_elem, "string", key=key, value=str(value))
@@ -65,16 +65,15 @@ def json_log_to_xes(json_data):
             # Consolidate all events and sort by timestamp
             events = []
             filter_out_team = "[T]"
-            
-            
+                        
             # Add kill events
             if round_data["kill_events"] and len(round_data["kill_events"]) > 0:    
                 for kill in round_data.get("kill_events", []):
                     if filter_out_team in kill["killer"]:
                         event_attrs = {
-                            "concept:name": f"Death-{kill["victim"]}",
+                            "org:resource": f"Death",
                             "time:timestamp": normalize_timestamp(kill["timestamp"], round_time),
-                            "org:resource": kill["victim"],
+                            "concept:name": kill["victim"],
                             "killer_place": kill["killer_place"],
                             "killer": kill["killer"],
                             "victim_place": kill["victim_place"],
@@ -84,9 +83,9 @@ def json_log_to_xes(json_data):
                         events.append((event_attrs["time:timestamp"], event_attrs))
                         continue
                     event_attrs = {
-                        "concept:name": f"Kill-in-{kill["victim_place"]}",
+                        "org:resource": f"Kill-in-{kill["victim_place"]}",
                         "time:timestamp": normalize_timestamp(kill["timestamp"], round_time),
-                        "org:resource": kill["killer"],
+                        "concept:name": kill["killer"],
                         "killer_place": kill["killer_place"],
                         "victim": kill["victim"],
                         "victim_place": kill["victim_place"],
@@ -101,9 +100,9 @@ def json_log_to_xes(json_data):
                     if filter_out_team in bomb_event["player"]:
                         continue
                     event_attrs = {
-                        "concept:name": f"Bomb-{bomb_event["action"]}",
+                        "org:resource": f"Bomb-{bomb_event["action"]}",
                         "time:timestamp": normalize_timestamp(bomb_event["timestamp"], round_time),
-                        "org:resource": bomb_event["player"],
+                        "concept:name": bomb_event["player"],
                         "bomb_place": bomb_event["bomb_place"],
                         "action": bomb_event["action"],
                         "success": str(bomb_event["success"]),
@@ -116,9 +115,9 @@ def json_log_to_xes(json_data):
                     if filter_out_team in grenade_event["player"]:
                         continue
                     event_attrs = {
-                        "concept:name": f"Throw-{grenade_event["grenade"]}-{grenade_event["place"]}",
+                        "org:resource": f"Throw-{grenade_event["grenade"]}-{grenade_event["place"]}",
                         "time:timestamp": normalize_timestamp(grenade_event["timestamp"], round_time),
-                        "org:resource": grenade_event["player"],
+                        "concept:name": grenade_event["player"],
                         "player_place": grenade_event["place"],
                         "grenade_type": grenade_event["grenade"],
                     }
@@ -130,42 +129,15 @@ def json_log_to_xes(json_data):
                 if filter_out_team in weapon_event["player"]:
                     continue
                 event_attrs = {
-                    "concept:name": f"Inventory Check",
+                    "org:resource": f"Inventory Check",
                     "time:timestamp": normalize_timestamp(round_time, round_time),
-                    "org:resource": weapon_event["player"],
+                    "concept:name": weapon_event["player"],
                     "primary_weapon": weapon_event.get("primary", ""),
                     "secondary_weapon": weapon_event["secondary"],
                     "other_equip": ", ".join(weapon_event["other_equip"]),
                     "money": str(weapon_event["money_left"]),
                 }
                 events.append((start_timestamp, event_attrs))
-                
-            # Add location change events
-            for location_event in round_data.get("change_location_events", []):
-                if filter_out_team in location_event["player"]:
-                    continue
-                event_attrs = {
-                    "concept:name": f"{location_event["player"]} in {location_event["new_place"]}",
-                    "time:timestamp": normalize_timestamp(location_event["timestamp"], round_time),
-                    "org:resource": location_event["player"],
-                    "old_location": location_event["old_place"],
-                }
-                events.append((event_attrs["time:timestamp"], event_attrs))
-                
-            # Finalize the trace with a round end event with the available details
-            if round_data["winner"] == "CT":
-                round_won = "(Win)"
-            else:
-                round_won = "(Lose)"
-            
-            round_end_event = {
-                "concept:name": "Round End -" + round_won,
-                "time:timestamp": normalize_timestamp(round_data["end_timestamp"], round_time),
-                "winner": round_data["winner"],
-                "reason": round_data["end_reason"]
-            }
-            
-            events.append((round_end_event["time:timestamp"], round_end_event))
 
             # Sort events by timestamp and append to trace
             events.sort(key=lambda x: x[0])  # Sort by timestamp
@@ -186,5 +158,5 @@ xes_output = json_log_to_xes(json_data)
 xmlstr = minidom.parseString(xes_output).toprettyxml(indent="   ")
 
 # Save to XES file
-with open("navi-ctside-round-logs.xes", "wb") as f:
+with open("navi-social-network-ct.xes", "wb") as f:
     f.write(xmlstr.encode("utf-8"))
