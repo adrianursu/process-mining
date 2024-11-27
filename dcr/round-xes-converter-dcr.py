@@ -47,7 +47,7 @@ def json_log_to_xes(json_data):
             if "kill_events" in round_data and len(round_data["kill_events"]) > 0:    
                 for kill in round_data.get("kill_events", []):
                     event_attrs = {
-                        "concept:name": f"Kill {kill["victim"][-4:]}",
+                        "concept:name": f"Kill {kill['victim'][-4:]}",
                         "time:timestamp": kill["timestamp"],
                         "org:role": kill["killer"],
                         "killer_place": kill["killer_place"],
@@ -62,7 +62,7 @@ def json_log_to_xes(json_data):
             if round_data["bomb_events"]:
                 for bomb_event in round_data.get("bomb_events", []):
                     event_attrs = {
-                        "concept:name": f"Bomb-{bomb_event["action"]}",
+                        "concept:name": f"Bomb-{bomb_event['action']}",
                         "time:timestamp": bomb_event["timestamp"],
                         "org:role": bomb_event["player"],
                         "bomb_place": bomb_event["bomb_place"],
@@ -75,7 +75,7 @@ def json_log_to_xes(json_data):
             if round_data["grenade_events"]:
                 for grenade_event in round_data.get("grenade_events", []):
                     event_attrs = {
-                        "concept:name": f"Throw-{grenade_event["grenade"]}",
+                        "concept:name": f"Throw-{grenade_event['grenade']}",
                         "time:timestamp": grenade_event["timestamp"],
                         "org:role": grenade_event["player"],
                         "player_place": grenade_event["place"],
@@ -86,7 +86,7 @@ def json_log_to_xes(json_data):
             if round_data["change_location_events"]:
                 for change_event in round_data.get("change_location_events", []):
                     event_attrs = {
-                        "concept:name": f"Move to {change_event["new_place"]}",
+                        "concept:name": f"Move to {change_event['new_place']}",
                         "time:timestamp": change_event["timestamp"],
                         "org:role": change_event["player"],
                         "player_place": change_event["old_place"]
