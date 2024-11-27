@@ -161,6 +161,7 @@ def json_log_to_xes(json_data):
             round_end_event = {
                 "concept:name": "Round End -" + round_won,
                 "time:timestamp": normalize_timestamp(round_data["end_timestamp"], round_time),
+                "org:resource": "game",
                 "winner": round_data["winner"],
                 "reason": round_data["end_reason"]
             }
