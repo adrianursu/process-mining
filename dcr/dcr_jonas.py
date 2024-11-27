@@ -241,6 +241,9 @@ def check_grenade(log, site, winner):
     return actions
 
 if __name__ == "__main__":
+    # note for this, we looked at Vitality,
+    # so the code will work on other logs,
+    # but it will not provide the consistency of a given teams grenade reaction for given teams
     map = "mirage"
     outputPath = 'dcr.png'
     option = 2
