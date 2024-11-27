@@ -64,7 +64,7 @@ def json_log_to_xes(json_data):
 
             # Consolidate all events and sort by timestamp
             events = []
-            filter_out_team = "[T]"
+            filter_out_team = "[CT]"
                         
             # Add kill events
             if round_data["kill_events"] and len(round_data["kill_events"]) > 0:    
@@ -122,22 +122,22 @@ def json_log_to_xes(json_data):
                         "grenade_type": grenade_event["grenade"],
                     }
                     events.append((event_attrs["time:timestamp"], event_attrs))
-
-            # Add weapon events without timestamps (default to start time if applicable)
-            start_timestamp = round_data["timestamp"]
-            for weapon_event in round_data.get("weapon_events", []):
-                if filter_out_team in weapon_event["player"]:
-                    continue
-                event_attrs = {
-                    "org:resource": f"Inventory Check",
-                    "time:timestamp": normalize_timestamp(round_time, round_time),
-                    "concept:name": weapon_event["player"],
-                    "primary_weapon": weapon_event.get("primary", ""),
-                    "secondary_weapon": weapon_event["secondary"],
-                    "other_equip": ", ".join(weapon_event["other_equip"]),
-                    "money": str(weapon_event["money_left"]),
-                }
-                events.append((start_timestamp, event_attrs))
+                
+            # Finalize the trace with a round end event with the available details
+            if round_data["winner"] == "CT":
+                round_won = "(Win)"
+            else:
+                round_won = "(Lose)"
+            
+            round_end_event = {
+                "concept:name": "Round End -" + round_won,
+                "time:timestamp": normalize_timestamp(round_data["end_timestamp"], round_time),
+                "org:resource": "game",
+                "winner": round_data["winner"],
+                "reason": round_data["end_reason"]
+            }
+            
+            events.append((round_end_event["time:timestamp"], round_end_event))
 
             # Sort events by timestamp and append to trace
             events.sort(key=lambda x: x[0])  # Sort by timestamp
@@ -158,5 +158,5 @@ xes_output = json_log_to_xes(json_data)
 xmlstr = minidom.parseString(xes_output).toprettyxml(indent="   ")
 
 # Save to XES file
-with open("navi-social-network-ct.xes", "wb") as f:
+with open("navi-social-network-terro.xes", "wb") as f:
     f.write(xmlstr.encode("utf-8"))
