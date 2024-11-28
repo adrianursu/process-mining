@@ -148,6 +148,7 @@ var navi_demos = [...]string{
 // }
 
 func main() {
+	f, err := os.Open("furia-vs-natus-vincere-m1-nuke.dem") // Replace with your actual demo file path
 	var round_data []*RoundInfo
 
 	for index, demo := range navi_demos {
