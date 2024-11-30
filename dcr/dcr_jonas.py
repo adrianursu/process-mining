@@ -12,6 +12,16 @@ pd.set_option('display.max_columns', None)  # Show all columns
 pd.set_option('display.width', None)  # Prevent line wrapping
 pd.set_option('display.max_colwidth', None)  # Show full column content (if
 
+def load_log(path:str):
+    if os.path.isfile(path):
+        return path
+    else:
+        file = path.split("/")[-1].split(".")[0]
+        with zipfile.ZipFile("logs/"+file+".zip", 'r') as zip_ref:
+            zip_ref.extractall("xes-files")
+        for file in os.listdir("xes-files"):
+            if file.endswith(file):
+                return os.path.join("xes-files", file+".xes")
 
 def load_all_logs(path):
     log = pd.DataFrame([])
@@ -214,7 +224,6 @@ def check_grenade(log, site, winner):
                 move = temp[(temp["player_place"].isin(site))
                             & (temp["concept:name"].str.contains("Move to"))
                             & (temp["time:timestamp"] > time)].reset_index()
-
             index_to_drop = []
             for index, row in move.iterrows():
                 if move.loc[index, "org:role"].split(" ")[-1] != "[CT]":
@@ -268,17 +277,54 @@ if __name__ == "__main__":
 
     elif option == 2:
         B = {"BackAlley", "Apartments", "BombsiteB", "Shop", "Truck", "Catwalk"}
-        xes_file_path = None
-        with zipfile.ZipFile("logs/Vitality.zip", 'r') as zip_ref:
-            zip_ref.extractall("xes-files")
-        for file in os.listdir("xes-files"):
-            if file.endswith('.xes'):
-                xes_file_path = os.path.join("xes-files", file)
-                break
-
-        log = pm4py.read_xes(xes_file_path)
+        load_log("xes-files/Vitality.xes")
+        log = pm4py.read_xes("xes-files/Vitality.xes")
         log["time:timestamp"] = pd.to_datetime(log["time:timestamp"])
         log = check_grenade(log, B, True)
         graph, _ = pm4py.discover_dcr(log, post_process=["roles", "pending"], resource_key="org:role",
                                       group_key="org:role")
-        pm4py.save_vis_dcr(graph, outputPath)
+
+        pm4py.save_vis_dcr(graph,file_path="dcr.png")
+        graph, _ = pm4py.discover_dcr(log, post_process=["pending"])
+        load_log("xes-files/conformance_vitality.xes")
+        log = pm4py.read_xes("xes-files/conformance_vitality.xes")
+        log["time:timestamp"] = pd.to_datetime(log["time:timestamp"])
+        log = check_grenade(log, B, True)
+        print("Vitality vs spirit professional game:")
+        res = pm4py.conformance_dcr(log,graph,return_diagnostics_dataframe=True, resource_key="org:role",
+                                      group_key="org:role")
+        print(res)
+        print("median: "+str(res.sort_values(by=['dev_fitness'],ascending=True)["dev_fitness"].median()))
+        print("average: "+str(res["dev_fitness"].mean()))
+        res = pm4py.conformance_dcr(log, graph, resource_key="org:role", group_key="org:role")
+        for i in res:
+            print(i['deviations'])
+
+        load_log("xes-files/g2vsNatus.xes")
+        log = pm4py.read_xes("xes-files/g2vsNatus.xes")
+        log["time:timestamp"] = pd.to_datetime(log["time:timestamp"])
+        log = check_grenade(log, B, True)
+        print("g2 vs natus professional game:")
+        res = pm4py.conformance_dcr(log,graph,return_diagnostics_dataframe=True, resource_key="org:role",
+                                      group_key="org:role")
+        print(res)
+        print("median: "+str(res.sort_values(by=['dev_fitness'],ascending=True)["dev_fitness"].median()))
+        print("average: "+str(res["dev_fitness"].mean()))
+        res = pm4py.conformance_dcr(log, graph, resource_key="org:role", group_key="org:role")
+        for i in res:
+            print(i['deviations'])
+
+        load_log("xes-files/casual.xes")
+        log = pm4py.read_xes("xes-files/casual.xes")
+        log["time:timestamp"] = pd.to_datetime(log["time:timestamp"])
+        log = check_grenade(log, B, True)
+        print("casual game:")
+        res = pm4py.conformance_dcr(log, graph, return_diagnostics_dataframe=True, resource_key="org:role",
+                                    group_key="org:role")
+        print(res)
+        print("median: " + str(res.sort_values(by=['dev_fitness'], ascending=True)["dev_fitness"].median()))
+        print("average: " + str(res["dev_fitness"].mean()))
+        res = pm4py.conformance_dcr(log, graph, resource_key="org:role", group_key="org:role")
+        for i in res:
+            print(i['deviations'])
+
