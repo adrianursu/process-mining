@@ -97,7 +97,7 @@ for round_info in rounds_data:
                 "player": bomb["player"].split(" ")[-1]
             })
     events.append({
-        "type": f"Win condition {round_info["end_reason"]}",
+        "type": f"Win condition {round_info['end_reason']}",
         "time": round_info["end_timestamp"],
         "player": round_info["winner"],
     })

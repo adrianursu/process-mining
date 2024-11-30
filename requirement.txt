@@ -1,1 +1,2 @@
 git+https://github.com/paul-cvp/pm4py-dcr.git@feature/dcr_in_pm4py_revised
+click

@@ -4,6 +4,7 @@ import os
 import pandas as pd
 from copy import deepcopy
 from pm4py.objects.dcr.exporter import exporter as dcr_exporter
+import zipfile
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 pd.set_option('display.max_rows', None)  # Show all rows
@@ -30,7 +31,7 @@ def load_all_logs(path):
 
     log.reset_index()
 
-    file_path = path + "/collected.xes"
+    file_path = path + "/xes-files"
     pm4py.write_xes(log, file_path)
 
 
@@ -245,15 +246,20 @@ if __name__ == "__main__":
     # note for this, we looked at Vitality, 
     # so the code will work on other logs, 
     # but it will not provide the consistency of a given teams grenade reaction for given teams
-    map = "mirage"
     outputPath = 'dcr.png'
     option = 2
-    if option == 0:
-        load_all_logs("xes-files/" + map + "Team/xes")
 
-    elif option == 1:
+    if option == 1:
         B = {"BackAlley", "Apartments", "SideAlley", "Middle", "stairs", "House", "TopofMid", "TSpawn"}
-        log = pm4py.read_xes("xes-files/" + map + "Team/xes/game1.xes")
+        xes_file_path = None
+        with zipfile.ZipFile("logs/Vitality.zip", 'r') as zip_ref:
+            zip_ref.extractall("xes-files")
+        for file in os.listdir("xes-files"):
+            if file.endswith('.xes'):
+                xes_file_path = os.path.join("xes-files", file)
+                break
+
+        log = pm4py.read_xes(xes_file_path)
         log["time:timestamp"] = pd.to_datetime(log["time:timestamp"])
         log = check_T_movement(log, B)
         graph, _ = pm4py.discover_dcr(log, post_process=["pending", "roles"], resource_key="org:role",
@@ -262,7 +268,15 @@ if __name__ == "__main__":
 
     elif option == 2:
         B = {"BackAlley", "Apartments", "BombsiteB", "Shop", "Truck", "Catwalk"}
-        log = pm4py.read_xes("xes-files/" + map + "Team/xes/collected.xes")
+        xes_file_path = None
+        with zipfile.ZipFile("logs/Vitality.zip", 'r') as zip_ref:
+            zip_ref.extractall("xes-files")
+        for file in os.listdir("xes-files"):
+            if file.endswith('.xes'):
+                xes_file_path = os.path.join("xes-files", file)
+                break
+
+        log = pm4py.read_xes(xes_file_path)
         log["time:timestamp"] = pd.to_datetime(log["time:timestamp"])
         log = check_grenade(log, B, True)
         graph, _ = pm4py.discover_dcr(log, post_process=["roles", "pending"], resource_key="org:role",
